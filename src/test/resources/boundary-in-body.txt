@@ -1,0 +1,10 @@
+--boundary
+Content-Id: part1
+
+1 --boundary in body
+--boundary
+Content-Id: part2
+
+2 --boundary in body
+--boundary starts on a new line
+--boundary--         

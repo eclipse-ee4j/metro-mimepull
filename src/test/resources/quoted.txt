@@ -1,0 +1,770 @@
+------=_Part_16_799571960.1350659465464
+Content-Type: text/xml; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Content-ID: <rootpart@soapui.org>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ip6="http://ip6.sgpf.PruebaOracleSR">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ip6:ecoXML>
+         <!--Optional:-->
+         <XMLEntrada>cid:531309647604</XMLEntrada>
+      </ip6:ecoXML>
+   </soapenv:Body>
+</soapenv:Envelope>
+------=_Part_16_799571960.1350659465464
+Content-Type: text/xml; charset=Cp1252; name=UnXMLCopyPaste.xml
+Content-Transfer-Encoding: quoted-printable
+Content-ID: <531309647604>
+Content-Disposition: attachment; name="UnXMLCopyPaste.xml"; filename="UnXMLCopyPaste.xml"
+
+<?xml version=3D"1.0" encoding=3D"UTF-8"?>
+<GrupoInformes version=3D"2.0" xmlns=3D"http://sgpf.igae.meh.es/fml2" color=
+fondo=3D"#B0FFB0">
+  <RecursoImagen id=3D"IDRecursoImagen1" tipo=3D"JPEG">
+/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAASwAA/+4ADkFkb2JlAGTAAAAAAf/=
+b
+AIQAAwICAgICAwICAwUDAwMFBQQDAwQFBgUFBQUFBggGBwcHBwYICAkKCgoJCAwMDAwMDA4ODg4=
+O
+EBAQEBAQEBAQEAEDBAQGBgYMCAgMEg4MDhIUEBAQEBQREBAQEBARERAQEBAQEBEQEBAQEBAQEBA=
+Q
+EBAQEBAQEBAQEBAQEBAQEBAQ/8AAEQgAggElAwERAAIRAQMRAf/EAIQAAAEEAwEBAAAAAAAAAAA=
+A
+AAAFBgcIAgMEAQkBAQAAAAAAAAAAAAAAAAAAAAAQAAEDAwMCAwUGAwYFAQkAAAECAwQAEQUhEgY=
+x
+B0FRE2FxIhQIgZGhMkIjUmIVscFygjMW8NGiskOSg5MkNFQlGAkZEQEAAAAAAAAAAAAAAAAAAAA=
+A
+/9oADAMBAAIRAxEAPwD6p0BQFAUBQeEgdaDwrAoMS6mg89YUHnrUB61AeuPOgPV9tAeqP4qADn8=
+1
+BmF+dB4XLUB6ooD1R4UB6tAesjxNB76qPOgxU+hNBqVNbT40GIyDP8QoNqJba+hoNnqo86DBUlC=
+e
+poNfzzV7bhQZolNq6G9BtStKuhoMqAoCgKAoCgKAoCgxKgKDWt4DqbUHI/kWWepFAmvchYZTZaw=
+S
+OqjYX+yg4neWRB/5B99BoPMIw/X+NBrc5pGSCSsH7aDnXzuOkXCqDSe4Ef8Aj/soAc+ZV0XQZf7=
+4
+a6+p+NBiOfR0myl/eaDejuBDA/1AD76DVJ7jw2xf1R99BwnufD3W9T8aDc13IhudHR94oNyu4UN=
+K
+bl0ffQcTvc+AhVi8PvoOmH3FhydG3NxsSbeQFyfcB1oGly76mO1/DuKt805HyBmFhn3Vx4c5e4J=
+l
+ONi6hHFrugfxJuPbQR/i/rn+nbkZ243nuPaXe3pTFriKv/7dKB+NA+sb3dxGZaTJw2RYnsrG5Ls=
+V
+5DySD43bJoF7H9xmFkBTgv5XoN2T718LwiQjL5uNGcPRpTyS4f8AIm6vwoGplPqd7YRTeRyFmOk=
+6
+JdfQ802f860BP40HRjO8/H84n1sJlI2Qb67or7bw/wCgmgcOO7hsukXcH30DrxvL4z9h6g19tA4=
+4
+uVYfAsoUHal1tXQ0GdAUBQFAUBQa3HQgf30CZNyjUdJKlC4oGvkuXtN7rL6UDMzHOy3uAXb3UDO=
+y
+HO1qUbOW+2gRpHOHNSXfxoEyR3Bcb0Dp++g5D3CfWbBw/fQYO83kFN95++g5Fc5fv/qH76D1HOn=
+g
+dV/jQdKeeqKdXPxoNTvOFk3Dn40GlPOHnVem07vWeiUm5P2DWgwkcjyZdLCwpt3bvLTlm17P4rL=
+I
+NvbQI45kp3epiQlwIUUrUhYWAodRdJOtBxyO5DsI2LpJ8r0CTK7zSRdtCju8vGgRZfdbJOD1fUK=
+R
+fW5oHFgu4OTynFM9DZcUXMk0ziQsGxQ3NdCHSPbs0+2gqd9afOhn+5OLw8q4xvF8NDjsREnagOS=
+R
+6xSgdEgIUhOngmgq7MlY+S4XU45htKv0pW4CB7bGgd3ajtr3I59kU5DhipPG8Ew8Gp3KTKXGgxb=
+f
+EolxS296gP0JUTQXf4XyKPj+Nq43xzuM9nXmClDmWz84y1qcAN9rbSFtto8kq3kfxE0DR5Zxbnn=
+I
+pxSnneHm+obqYbygii/S5C22kmgaGS7P8+ZeUycjjXVLGoGSbdQR/iQVCgSW+13dzjEn57A5ONG=
+k
+t/GlcTJBJP2qCU/jQPPh/wBXPdbto83A7r453IY9K/TORSiz6QOpDiPgct770FquNfUBiM1h4nI=
+M
+FPTJgykhbToP4EeBFBKnFO+ESShCC+CdPGglHA9yIszaPU6+2gf+LzLMxAKVA3oFUEEXFB7QFB4=
+T
+bU0GtbthpQIeYyyYyCTpagjXkfKjddl2T76CNs/zJphK1OPBKRe5v0oIK519UHa7izjjWVz7a3U=
+E
+hUeIFSXAfIhoED7SKCJJ31wcBS8swMXlJ7fg4Gmmx79XCaBNR9Z/DMg7scgT4g/mQ05b7EOXoF3=
+G
+/UFwnOqCIuVQ04vRLUkKYUf/AHgAP30DjY5zHUQQ8kg6g3FiPZQKjXNYy2yPVB086Dn/ANwqcZc=
+m
+gkR2lpbcc8lKBVYDxNhc+QoEaX3CxyG1pjPPSZCTtEeNEddN9Oq1bEg9dNfCgSJHcLLmX6SMdK9=
+J
+CCpa3JLDI37bgEJF9t9OutAlsc1nz3h8xCiIS0kF5ErISlkqTckKKnyNbdAn2UHNzXkDOa438xL=
+x
+jGIWw6lceViJJYkqWWwDdxoJUE2A8dTYDUk0EPZHuDi5vJPRfjqdafdCWpCpDqyp223couLUojc=
+k
+pBJNBYXh/MoUzjMZqC0hhcdCW3mWUhCQoJGtk2GvjQEzK+q9vPw6eJoIzy3NZEfLuei9tSFWuLU=
+G
+TnN1vgMIWF3F1K9tBJ3a7kDa8CXHF7duUhFYB6pSpBt+NBVj6qnnT3Q5Atwm+2CADrZPyjdh9go=
+I
+o4/x6byJnIKilLUfFxHJ+SlLNg0wlSW7gdSStaUpA6k0E6dt0Tu5nbrB4ZUtOMwfHHGcCw1chUp=
++
+U+t9TqWxoFEOKK1fy0H0d7IdruAce4i3hOMphSJUaN6kiM24w4/r+ZS03vck60DiXgOHuYhaMtw=
+a
+VyYL3oEeBjnJSrIOpJQUpSfZQV+lcU7A8h5rN49CwruDyzSVOt8Wy7ErDT1JB+IsoWGvUA807qB=
+v
+8n7M8GfzUePBcyONiSmtiX4eUltvNrJ/MCtbiTY6FJTQQN3f7X5/tq66cblZOUaeQpS0S2hHnJR=
+a
+6XELa3wpqLddA4PG1A1+Ac25HG489EQlsQGHENh9hJbQFuqKviR+lV1ageGo0oJD4H3WnQsq0xK=
+k
+FSbjcAqgtfwLuO3MQ2WnvK2utBYzt9zgvbGnF+VBNuLnplMpUDfSgUaAoNa1fFtoOaU56baleQo=
+I
+T7oc9awra2/UAcN7a0Fau5HfWDgcM/kZ8n022htBGq3HD0QgeKjQUl513q7id3sw5xfCylR4N9z=
+7
+SFkNNIJsC8tNis+Sens8aDowXaSBiUplTUNzHwATLmkEFXX9tB+Efd9tA84z5itCOXEtoGiWwkJ=
+0
++wWoEDkeKxuaaKJkFiQnwUtCd3vChZQ++givkfAZmNSuXhiX2E3U5DUdy0jx2H9Q9nWgReH8k5a=
+c
+21i+NLLiAQqQ06SY7bd9VK/h9ltaCYI2by4ykbHwiuRKluIZjxmrqU44shKUge0mgkjKKXCCMLC=
+z
+cZl2GhbWUSpxa1Kf3gujT4AkK+FO3U7epoEJmLBeiNfNZRMp1hJcQWy64HFA7vhAFtVDqfCgBCw=
+Z
+lNvqYkuNoRudcQlSl+oUj1CnUDda9vBKftoFZmLiVtlULGqUVnch55CEekkWQhv4yr/j3UEX93u=
+X
+xcc29ioUgONtFLJdbILanljcopCQASncbeyghbD8sxMuTFafacCm2vTX8IsS2l9RN7/zg0E2cA5=
+7
+KgstvhKXPWdEacgm1nkJtuT5btDb20CtmObTpswBtwNharbR4DxoG9yDJYmYdoY9Ek7ELR8Slq8=
+S
+qgbysqjDSSA6Ol1X6edqCSuzXM2JmEyDSnLOJyETYnzBW2bfcDQRn9VqVP8AcjKyEgBMiHhpLew=
+3
+GxyAwev20EX8c5Jj8Hx/lWInJVuzkFqOw6kX2LZktvi/sISQaCX+yh4bx7jmS4f3QmOsJD0DMSI=
+e
+PU6mWxEcCXFIWpISkKdQpAO1V0pOttaC9f09fUn9PuJyDXDuF4EYRieyteKQthiLHkpaBKrv3Kl=
+K
+UEqsVE7tqtb0HH3D+vnjHazmMzC4TELyzGO9P1HIr6Cwlcgbw2CQq5soflv5+NAl8x+s7t73Yah=
+Y
+Luf2lmNpaWlMOa5KaEqI9uTtdjq2NrQsFQspKh5XoI75v9RfanHswZWJyypKA46WG3gr5qwUBsU=
+3
+YqUu6SDYEXoG5le4PMO7TMlntzwWdAbaCTKlTnUNRVJdG1tYhKQ46XCr8vppFz4Ggg3kvbzmHbk=
+t
+yOWMekZa1seqw4h1r1iPUKFKZW4lKwAfhUd1r+RoOPFz24ikuMD9zzPX30EuduOeZWJk2/XeOzQ=
+B
+PuoLp9reWiY0w8leul6C2PBMt81Fbuq+goH6g7kg0GVBqWn4t1Ajclnox2KkylmwQkmgox3V5VK=
+y
+ORlzFuXbSVWv0AHjQfP7vb3Em53JrERSloUssYyOD13Hbvt/Es/hQSBwPtvD4TiY7WRdAeCPmMm=
+8
+LErfIuoD2D8o91Ahcv5q1ElfMLdLhSbNJvbakdNPCgaz/cNt0FxK1Ff5iCdLnpQOXDv5PLQPmXZ=
+T
+UezLcr0nTZZjuLLYWL2FrjxNByymJ09tyPDntNlYKA76jaVa3F03WdaBDxWDn4CI7GxDTSGgoqe=
+k
+OutoU6rX4ipSvi06UC/wSNMe5ezIlSo4dhtuSIzge3NtuoSdpWpu5FjqBpe1BKSclNs85/U8WyL=
+q
+UwHPTdVtbG1KtW03IJv5UHj2aZ9P/wC65mGwsoSz6kVpClJQrroRYEgdfL76BIcyGAnIcS1yFDe=
+4
+qQgem1cpGqhdSehASD91Alzsri2cS/kpWQ+bQy4ktQ7Da8VXCTZI6a6XoK88g5UzkM+XMqw0+wy=
+p
+za2t1xtCnFKstQLfgNoSB7KDnad4mHEvRoEVlRSofBJlfquki6vGxoFzA5xhOZLJKEQckAl5KFq=
+W
+lL6blKviAIO0eFA6OR5MY2Cme+bKWmyli5IUk2KwfHd199A2sHyGKXlvPTEqQLlKVK1ufK9B5mR=
+E
+lsLltyApSr/DQdHb3NPYXJysVvKHEvxpQTe11Mg3B9xIoFTu4lXIFY/NpuW3YTWOkL6+m7FTsQF=
+e
+V0WIoISnNLQstOjaoBSFA+drUFjuz3EsL3A5ny7lc1CiJMHHPY5KBuSBMShMgi42qU0UbCk+dBJ=
+5
+7I8Z5/3G4l2wgT1NyORzExlvMNlsQYMdsvvu7bg3ARoLgbiKCOshxRzEdx5nD5z7hahPksyydqk=
+u
+MqS0pZOv5kBB19tBOs/AcPhcRyDmXnR3lKYL65q3UXAas6CkXuLFINqBu8W7VYDiPbDH51vHIHK=
+M
+yhOVzGTfQFvMrnvKfQ0nd+X02VpFv4ib60CzxL+oYybJcxIJVJhSETZa1pStqOkoL0hK1ahaGyo=
+g
+jXXSgbf1RvYvj/AsDx9qYZc3NyY+VSp0JQpEPHRnIrZCUWASsu/CbC9jQVhx7slzIFwLt7KCTeI=
+u
+usPBStSq1iaC1XZrkDjXpNLV4igvN2onGREaN76CgmWObtig20GDuib+VBGnefKKg8UkhJsVpIo=
+P
+nT365bIxfG5UaMra5NPy5cB1Ac0Vb/LegpZByERzuhh5GRUBEhSA+sKF0/sJK0i3+ICgcnO+5Ux=
+2
+Y4jHPlSFHQAK8aBmSMVzXNMfPNwXHW/zLUrTTzF6DpxPBM5MlQ43qNhUxbbaUBYJus2JJ8LCgd/=
+G
+szjcj3By2Jc9UrlsOwsa2lKDG+VipKQVXO4HcjSwtQdfzbMBpXzLEbdqUBTJGvlcCg50ZWRIf/Z=
+Y
+adU8UhiI2klS3HPhShKbaknSgmCJxrG8aiN8ZyeDdlTWgl7IP49RbbdkOIJWPUAspLY+HTT4fMm=
+g
+5OQZLt5xhr18ngMgrSzAkvrCHFW1CAq2gta9tB76BmIlc47gN/O8dxiMDx9Tiktris+o4sDRW1x=
+3
+VVrdRYe+g9HajIvpJXIybTpKUiSvY82QdFKKElKttwba0EcZuRncf6uNkyFrbUVpbfBKkObCU7k=
+F
+V9QfuoGU9xzJZSQ03i2PmBHbO8BSEkDdfooi/WgkLi/FGGO3fIMzyLDtzncA3HksxJLjiW98qaz=
+F
+JUYrravyrNtbUCQOfcUgo/pkrtri21NKTIbdbn5rYVDorSYSPdQd8/vZx6fjhipfBMYplP5CZeY=
+I
+Sen/ANSCdPOgSmefcH9MBvtph31DUuqVm1X+6YBQKmG5fxPkEyFgmeGYbHKmSGYxebTl1uJDzgb=
+N
+g7NWm43aXFB6126y/KM3PyuIz+Exq4rwadOXyrGPdUtKEhRS25qUm/UUCye3nKWFb08z4i8kpKZ=
+M
+V7O+ol1A/SdrVrjwUDegb83tBJyqlKc5NxuOP0bco66oeQ+GOb0Ej/Rx2vjI+qPinbfnLLGcwPJ=
+o
+uRLzMeTI9AtssOrS+0tlTKkuJcY2i/gT50F54fbPgHaHu/D5jxHiEqDCjRp8R+Wp96bLbXIjuNt=
+r
+Wl911aWuhFj4fF4UEXTOxmQ7k82j8khcTlrgupeelZLIsuRWpQSremxYdCwhy523spPW1BKuO7S=
+/
+Tw/BBg9tQ3mYZbDglrkzWo7o1utMl1Seo0uCDQR/3xQiBGzrgSG0stMLAToCpbibaDzoGPxGVwG=
+H
+lI8fuRlYuHwr8OQqXJn3DC9imHS0emq0ghI8TQVF7q9zV9zu4/IecTnSqHKkKZw7NikNQGD6cZt=
+K
+fABsA28yaDUrBxuLY5vPcpWphT6QuHi0mzpSdQpw9U38E9fO1An4/nuRdmBcF4x0E/CgpCx9tBJ=
+X
+Hu6PL8S427DkKiykfE0838TTgH8SFXB9oIoPoR9D31MxO6bj/D8wyiHyTFtpdkR0H9uQxcJ9doH=
+W
+wUQFp/SSPA0F742rKT5ig20GDn5bGghL6hXXFcYkNN6/AoWHuNB8ve/eSRBwEBtbu5xco/BfoPS=
+V
+bTr1oKy4dt6ZzeDHaZL7k14Rm2goIKlPnYLKVoDrQS1kuz0zGKw7yeO5Zybkp7UARJT8Zpjcv1C=
+A
+h8k33BFwrbtt7aBS5pxblXGIsFnJYSXGZkyY8QORchDfas4TdG4qbsogaaWoG+1BTgJrS8REW1I=
+k
+IkJbk5SbAUhopaVqEtvqN9f+WtB1ROStYbjkLBxuOtJmsshtjOFRU8VuK3Fe70ArapXhu6UEdKi=
+8
+1kSXnzkFrKyFbSg7bm5Fvh0oHd209TH83iyOd5X5aClmU6lYbBUl0NfBsuBbX/jWgl9zu/xZLyo=
+k
+XmTzyRZXrEtqFz8FtoTrdWv2UEJd0uaz+UZcOTprrzG75eK4+bqbj7uthoCfzGgk5/n+AxcBnBw=
+M
+8/GxkVltmM8GQUJa2k7glF7Cw8dfOgTJ3P4sOIUYjk68m7kNrXyygQG2AbKUVHoolVkjyudNKCK=
+O
+RPTszyJ1ERtRiQU+g2kLSG/U6u7QSAQDYC3lQNyYosLI8D4XI/stQSNxmAmD267hOsJQW52Kxyw=
+t
+t4OlITl4agFi90nrQRN6M3J8mexcVCnXXXWmGGk9VLWbJSPeTQOl7GR42fj8I4biFcm5E4Qh5bL=
+a
+n97x6pYRY2Qk6BVtyvzaAgUHRyXhPOuHqSOa4FMdsqKHmok6K/IYVa+1bbLqig+xW2gVeG4KNAz=
+/
+AB7IEodhT5cRUWaBtKVh9N23B4KBBHvFqDbhuG/7nHJpceX8vMx09SXPWQgsFpQGu4pUoKFj4Ee=
+6
+gSuR8T5pxWV6E5va1tQtE6OliRGWlYJSQ60hSdbdDr7KBW7e8M5zzgvSGnGWMW1uQ9l8kpMeI24=
+k
+ghKVIQVrUP4W0qPnagkHhfLeO9iPqW7V8rXyRrJRcE4WM5kUxXY8ZqPNW6lah6hUpSAHjc2Gg6U=
+H
+0E+oOBy/l89eW7UZl9lmQ1FemQce2y446p1KilaVrPxNgAEpSU7wq+7S1BxdmOHd928FJyGS55k=
+o
+0GMp0O47LfJvlxSUglKGkN/Ak+FlH3igesbkeNjYHKsvupbdcWwZAv0DG9RJ+/Sgqb3r5OeRZ0c=
+d
+jfB82+3NyJP/AIYscbmkK/mVbeR4D30EI90sBL5r2+5Fk49x8iuOMY2fyqHrBDh+26QPdQQA/wA=
+S
+5dxhtnJzcWtcaIpLqJrQEiMVDUErb3Jt76DgyGdy/PpTuRybnqLbUEXHTpegXOOcXAWlSkFVA+G=
+Y
+8mQlGLwcReSn3/ajxk7ykkW+JQ+FP2mgtj9C30n9x8D3YwvenlPIGMKnGl23HoqDKfmMyGlNLaf=
+d
+ultCTuB+HebgUH1XiqCmEEeVBuoNb35fsNBD3eSKZeKeRa+h0oPln9RXF40XFZIxsM6mVDkpfey=
+a
+kpJDIUUqClFRXYhYPS1BV5qW1is7AzL0ZExuFIZkuxHUhbbyGlham1JOhCgLUFr8twtHOEYfN8S=
+4
+9ExjCJEfJRi1Ok7XY5QpWwojbW033A6WOlqDZO7VoyUtiTmRGadZcQ6hEeLuO5FyAVSlOqKbnUB=
+O
+vjQb09s8NAU3IaiIlFu5bccS2kJKhY2Q2kJsfbQJGZ4uIGPfd/qSscwkKbU4pSkR20Wtb4iB08L=
+X
+oIvU3x5xwsMcrO+9gERnDe3tKKDgzeE4whv1s1n1yEpSpLaRHdT16dU+YoG/A4lgpxXksY46WGy=
+6
+4yogpStLeosFWNtDegQOSqS5LQlf5NAfdfWgW1cDbhpcTFkqQ2CTsSNoP7W8nr42oNbfCXEvJLc=
+p
+xB3bfh/xhP8AfQdMPjUJDThdU44tq4VuWoblfvnwI/gFA2OQs+hKU1axSSPuoHfwSOsdv+fuJ09=
+X
+GwwdTrsyMZen3UDM4k+GedZGWkfustuLjHyeLJQlXvG6491BJParJ/7J+n/uR3Jwj5Y5bNltYeL=
+M
+bNn4sR5VntiuqSoHbceFBD/G0rDfzjq1LkPqV6qyokm/gaCcMBCZRjCwUbEMPYWc2CLbXpQJUQf=
+b
+8uk/bQMJ3mLvEeQcmgAKX/VpjyNoNglSVkA++6qBXxveeXAJxMoLXFZjqjzwFfDIj327CjoSNCC=
+f
+bQa4vcpUfiqOO41ClxcXNmFkN/6hYllLyN9tTY7hQNyNh+b95uUxuNcKwr2VyZbDTWOhILzm0KJ=
+3
+ukfA2kbtVLUkCgvRwTl3cP6cu3GJ4LzHOx+Q5jFsmPIRGQpRwkU3UzF+cb3GQloE7rp+C9knaKB=
+4
+Y/vlzZ7DofagqV6iErTkX5DTsdYVpuQttRBHvoGfP7iZgJfXJe9dbi1OllsktKcPQrXYFaR5WAv=
+4
+UDNhYfK5dMmXNUovT3f33BqsoJuU38Co0HfncEn/AGwePM/sPZEoDRVcNtQ4Kky5b7h1+FCGwke=
+a
+1AeNBBvG1ZHFNtiDKXHStbscKBuEhtXwpWk6EFBFAuS8Lx+YpcblmKEN5dlHMYpDbbnxD4VqQUl=
+K
+hboaDXgeyDsdxyTBy73J4D59RO39tbaR4OMo+I280kj2Cgk7g8SFx+Q002whlIIIQlISPwoLk9j=
+8
+68tbPp/l0oLcYSQXoaCfEUClQYOfloI87g48yIjgtcEGgo93z4iymRJ+Za9SHkmnIktG2/5klJ0=
+8
+yk3HtFB86OY8bl8Xz0zj88ErjKIacIsHWVatuD2KTrQWP+kju/8AM49rsxmEMfMoU45x6Y+SFut=
+q
++JUUE3G5JupAtqm48KCwOe4w8d5R6ON3pPrKBV8ZHs3qWdPO1A20ccmNEJjqMi/5ULGxLgtqQnw=
+t
+52tQJHIeBx8qW5XIOOpyHp/AwX0fMC/kEA2v/NagbeT4LxyDjp62cDDhvIjvltKYbTbqFBtVibJ=
+u
+PeaCn/OJc1CUsuuX2p/uoJzg9oNkKK47mXI7BZQUs7Wzb1ED2XtrQQhyrHSYGSk4+Yna9FcUy4P=
+8
+JtcewjUUEgcRwXIOT8fazMLJtKSoqZkMuISVNuIR6ZBJIOqSCKBWd4ry6AUOuBlQJKgS2oG5Nzo=
+F
+UCSniPJHnilt9LLbhKrJjlZKiXD4q6fuEUEcchTJn596ExeVIdfLLexO0uLKtgskXtc0EvI4HJ4=
+d
+295eJMhS1u4yOFM2Rs3IlMkqSQL+FtTQQtx2Mt3PZV5n4XGlslKz0sUG4PvoHNx5nI4aVkmIuNX=
+m
++P5shOYw7SiHW3UncCEoueuugoMsdw92Rk3nYmAmRoQX+zFe3spQgjo4+8hISL9Ta9qB+ocl57K=
+w
+OJ4xaJcx+U3Pz0uO36TCEthDaG20D8qG2m0tNJ6/mUdSaCKu4EOND5VLy0s7Go8h93aQfjcC/hS=
+P
+eaBj45Gc5Pmo+D4rAfyWVyS0sx4UZpT77zijfYhtAJP2UF3Pp6//AFxrnsjlHfyS8rYkLHEcRIS=
+3
+sJ/RPni6EG/VtkqUPFQOlBeHivaHifBsC3xbiqI3FcOvaleO462llBUenzkxxKn3VK6b7j30DL5=
+L
+wXDsZPJcTehIYVJjlWLctr6qVbjcnUqP5SfG9/GghaD28jOSnYeDkM47Itne1FllacZNKgDseDZ=
+u
+2s/pcTpfRQPUBpfa4tiZ4wHcXjzfE8gfyyVLkoaWem9t9v1W1p9322oJSb4vxjC8fYykeS3LgLR=
+/
+8OYJDintLhtu2pUsny99BHHPc9gnYM/DQnGlT8i2hjIhl0K9GG2oLTDasb7Sr4nV/rV7AKCHMFw=
+O
+VksDJegtqU4vKO+gm17oaAa0+6gsXw3sXhOUcaTg8yPQyiUKcxkk6EKtuU0u3VKuvs6ig4OHdoY=
+v
+H8wX0vOMPwXbPRSbLbcSdCSPwI60Eh8j4Hh+eyEx5ZbgZMtkxJyEBIddT+ly1tT5+NAtdioeYwO=
+X
+ewGbZUzJiq2qB6EX0I9hoLk8ZcJiov5CgX6Dwi4tQIeexwlR1C1+tBXHu3wRGRiSYzqSkL1Ssfp=
+U
+NUqFvI0FEe9/aOHyKG7HfT8nm8cSIcvYpSVX1LbhA1bV1B/SftoKl5KDl+MZQRMm05j50dQcaWC=
+U
+qCkm6VtrT5EXCgaCfeAfVTkgyzj+4RXOWyAhrKNqspQHi8lOpV/Mnr4iglmB9Q+Fmpvi2GlJSmw=
+e
+SU6k21UkXNx7dKDCT3pTJ3BU4gqG1SUaXSfC51+zp7qBNzPdnFpxExhxwMJdYeQXnFD1CVNlIBJ=
+6
+9ff7aCl3N8tGlvqSyb7U2/CgvdHwUV/C42fjZTCHlxY6vSbso6tp0A1Av7aCCe9HEY+XmHJx3EN=
+Z
+VtIQ60r4UyUJ6WV0Cx4X8NKCMOGcryPB8m60oLEWQQJcbooFPRab6XH4igklHOsdPHzDWRQhB6h=
+1
+QSse9JIIoETknds4iI9DwcoPSHklG9A+FskW3bvFXlagb3btqLgp7fJskUuTLExELG4NbtCv2rt=
+0
+8qCUMzyOLmuA8vBfBIxqnDdJBul9o6k0FfsLlExpE6Qy16rbxRtWVpQCUi2m7rQOKFMmvuJdjpS=
+w
+7ptUmW2hfsFwaBwt8T5xmUerNkPORtLpM5Fj/wCkXoJB4Q85wWKXmcE2EH/UkCUneSRa9tmv2mg=
+j
+V/tNy76gO72Q43w9IbgY9xT2cyzm4RILbjqrFduqz0SgaqPsBID6KfTr9M/afsVhPncdCVIyUpI=
+b
+lZJ+xly021Clj8jR6+k3YH9ZXQStnsyh2ElEFaRH2n9lACUJCdAnaLACg4eLZ45GG4lz40pSUuI=
+V
+qFIJ2lJoOflOPdzWNERpZXlcWDLwspR+N9pH5mVK8VAfD7dD50Ebct41/WMbF5fxptO9aSuRGJK=
+Q
+TclxBIBsd1/cffQQ3i+2vMO+GbnZ3k2an4vjEZ35TE4ph9TfqIj/AAKcJBI3KXcnTQWFAp817Yu=
+8
+CgwOLcby2Rx+I5K+3Fnu/MKXICmQpQaQ6SC2h5KzvCbFWzyNA5uEfR127WynKIkTYEmx/fjPBL2=
+/
+zXuSoEexV6CRsB2849xDIJ4xikKfj4eE24ZEiynnX5Mh15biykAblEk6AAdBQOaChuHlGJ23/TV=
+c
+kdetv7CaDZy7jpXPey0H4ZBtvsNHEWukH/nQMTMT3FxC4gltxlQsQbEG9BKfCHshlWoaHZDbOUg=
+K
+jplT32i6p3HvG6XAApN19U3NwDqQelBZ/CxTHZSn3UCvQFBrdbC0kHoetAzOWcXayDC7ouSKCq/=
+e
+TtNLmx3n8egImISoNLI0WP4Vf3GgqDy3tmMxvg8jjtSC2pQ9J1OxSV+Nj1FvZQRXlvpdya1rk8f=
+y
+Bjtk/DHfG+3uVobeVA3l/T93QiLPoOx1FPQhakn+yg6YvY/u8+EgTWEFX6A48tQPuAFAtM/Sn3O=
+y
+SEuZjOtR2l9SltROvtWTQOviX0ncNxb/AK/IpDuTko1Tc/Bu9t9Le21BJ2L7L45LhMf5h5pH5mk=
+v
+LQkeAuQeg8zQc2f7S4qY8mMZxlLOhYYustk+BUbjQ+F9aBl5n6aZeSUY5eVYfkLidqk38iP7zQc=
+s
+f6OmV/FOzHoote4WkfeCaDtw/wBKPDkSgXJD0gJP/wAyVD09PIq0oH5j/p24RFUFFPrgeIX6hv7=
+d
+osPvoHVH7TcLjRH4CMS28iW2WpMZ4oWh1HWyhY6XFxcUCK99Nfa+cSf9vMpGhWmOi6vaLqCUAfb=
+Q
+dh+mDg0aHvxWEjJUhJ9NDzbDhJPibIOv20Fb+7Dmc4dl8tHwP9MhY3EoSVtHGQ1vhwISpSQ4tpS=
+j
+qQOtAwsFO+o/nWK/qfGoSJOKutK5EeBimkDYbHcotoVpQXq7P8HHajsBwrHZCOGM3yyUM5yV4pA=
+d
+dclO/tpcV47WQkAdBc0EvOv4yUtWTgNqhx2HPSdQypW238RRfb9woEzPiTgpIlKdDsSYn9t4H4V=
++
+OtvH2+PvoEvimYIZzDaF7VDVsDrZwm/9tA+XFOTIyUx3PTeTZyM8OqHE9PsPQ+yg4cIERM5Ix6k=
+h
+uNmAuU2z4MzEW9ZA9h0UKDmzPrYyO5NhoSfQUHFNW/QFfHYD+W9Am93eP/13gMyVGRvehejkohT=
+1
+3xVhzT3ouPtoHxxFQcjNm9/WabWCNL3SDeg5/wCnOozecnOC5eDSE21+FtGg/Gg49vW/tFA5dqp=
+m
+IQ+NVekR/mRQRNzGMIUmcwRYuWWPvoJJ4s83Hb4NnVf6OQbdw2Qt0KVgqbJ9oUnSgs9w2U9KwbS=
+Z
+QIfilUZ1R/UW9Ar7U2NAu0BQFBqeZS4kpIuDQNLknEY2RaVdAN/ZQV17o9gkZZ1eRxoEaaBYO7b=
+h
+xPkq2vuIoK/cj4ByLjLpORgrG2+2U3+4g/5yFbftAoG6S98OxoKt+bepSiftAFB1R8nkYSVIQAF=
+O
+/mKEJSLW81a0GL0qcAPmHisK/Mm5NyfDTWgzZyjcZsNHaSdQ0lJcdT7rWA+2g2OZp8tqjJdWlHi=
+E
+kn3ApRYf20Czx3KGESqUpLKbXbWoAuA+YCLfiaDonciYlSQ9LkOyVJFkbFejoOl7bifdoKDWy1n=
+M
+okoxeHceCujwaddUftOlAp47tL3EyI3JgrjoVY/vqS308gBegcUXsPzd4AyJyGyeoHqLt99qBYi=
+f
+TpkFJ3Tcq6VdbIQAP+omg6x2TmRTt/qkpYHTVIt+FAj8l7e5zj+NfycfNeg1GSXHVTFIbaSkeJc=
+N
+gn3nSgoJ9RKcVH5JJKsq0tnLNKEkNOJe2OfkJJaKgdUg0EP9sW52Y55xfiz7ryYsvJQoThjvOIH=
+p
+SZKUK0Gh0UaD6w/UQ61FyuMhREhEfHhgNIToEpbNgB7gKBQ4Yll6CsEBSXlELB6Gg2yoMFgu8az=
+2
+5eEyJIYkJ/1Ibx6LQfYfCgjLC8e5Bw7uBk+G8oWF+s2zJxORQLNTI28p3p9ouNw8DQTExDEdDQQ=
+b
+hIFj5mgwn43e/HyDQspDiFA/wupuAfcoEpPvoFPJYdl6Ml9pPwvAhYP8woObi8ETONIxz4K/TL0=
+V
+RV4pSopAP+UigUMFAGPdjxUj4WUJaA66ISE/3UHejHrdRMeCf9YuKF/IjYn8BQJzmCUIn5bL/Ub=
+a
+6nr91Ar8fxy14xbCrXZcI9903oI87h8Qy0/LNt42MuQ7IbAabbSVFRTYEaeNBNnbDsvMTwvBwua=
+o
+LDuPebmpiJPxBxBKgFkdOuooJraabZSENJCQLCwHkLUGdAUBQFBipAULGgS5+HYlJIUka+FAz8v=
+w
+GHL3D0xc+ygj7NfT3xXMOFcrHI3nUutAtLv70WvQN6T9KHE3xZsy2f8AA9u/70qoOdf0hYJwWRk=
+5
+qL+fpKH/AGCg1f8A4f4VsfFm5iR5ekyP7qDZD+kjizToMrJzHk/wpLLf4hBNA7cT9NHbGFtK8Wq=
+W
+oeMl51y/vG4J/Cgd2P7T8QxQH9Nw8WN/M2w2lX32vQKrXFYTOiW0gCg3p4/EGgQPuoM/6FHGu38=
+K
+AOGatbZ+FBwyeONr1CCKCIvqc47KidkOUTod0qjoiOOqHgymawXf+i96D5lZjnXLDl5wGQLn7zo=
+C
+ihpRsFkAXKTpQe8e5pnRyvjip0hK2U5bGFy7LQKUmY1uIISCNKC9n1KQgxyZUdJ3WCbn7DQdfb0=
+F
+eJaXbVWt/soHXOw6MnDchuj84+BX8KvA0EddxW5jvb9OfUT/AFHgsxqSpXVRgyCI0lHuAUlf+Wg=
+e
+3DZo5HgY8pGrgOxwfzCgdTWKMht2KQTuTe9uhHjQdkXGmREUCj4uvT9VviA+0UCbxOOq2RZCCPT=
+l
+/Am3Xe2m/wCIoFBEVYyqWGUlSidwQBc9NaBabxGTebLbcVwlWtwg9KBRx/B87LWlL8JSW19Suw0=
+o
+F/B9sHozrhyLyEMqsQ20SVEi/U6CgeuMwWKxTYTCYSCP/IRdV/eaBQoCgKAoCgKAoPCL9aDBbKV=
+U
+Gow0HwoPPkkmgPkUedBgqD5Gg0qx1z0H3CgzRAtQbPkhQYjHo8RQbUwWgNRQHyTdBkIbQoAw2j4=
+U
+CXybiOF5dxzKcVzjAkY7LxnoU1k/qafQUKHvsdKClX/8ju0wdK2+e8jaQb2QgwRa/QXLB6UFb/r=
+L
++irjv0143imZ4XzSdk5uQlvKfjZkMKUhEQNuNuNCOhs6LNlE36igs/3Wko5phsHzaEQ+1l4UKWH=
+E
+ap/eZCydPaaBZ7W4abLxcRmOwt1VlGyEKVpf2CgliF275I/tX8p6Q6guEJ/DrQc2R7BS8w1mocy=
+W
+0xGzsN+DKQElwpDySncBoLg69aBU7fdhMRwiAYa57+QKtpUVpS2m6UhOgFz4edBIUPiWJjJ2txk=
+6
+9bi96BQj4WA1omMhIBv+VPWg6E4rGJVv+Ua3fxemm/8AZQbEQoTSt7UdtCjoVJQkH8BQbglI6AD=
+3
+Cg9oPLX0NB7QFAUBQFAUBQFAUBQFAUBQFAUBQFAUBQFAUBQFAUEad8OwvEu/OJx+I5U/IjIx7jq=
+0
+OxSkLW28jY42d4ULEhKr9QUigUOI9luA8P4rjOIRoPz8HEsJiRTPIfX6SFFSQrQJNug06UDziwI=
+U
+FlMeEw3HaQLIbaQlCQB4AJAFBu2p8qAKEmg8DaRQZAAdKD2gKAoCgKAoCgKAoCgKAoCgKAoCgKA=
+o
+CgKAoCgKAoCgKAoCgKAoCgKAoCgKAoCgKAoCgKAoCgKAoCgKD//Z=09
+  </RecursoImagen>
+  <RecursoImagen id=3D"IDRecursoImagenPunto" tipo=3D"GIF">
+R0lGODlhCQAIAOcPAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD/AP//
+AAAA//8A/wD//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwAAZgAA
+mQAAzAAA/wAzAAAzMwAzZgAzmQAzzAAz/wBmAABmMwBmZgBmmQBmzABm/wCZAACZ
+MwCZZgCZmQCZzACZ/wDMAADMMwDMZgDMmQDMzADM/wD/AAD/MwD/ZgD/mQD/zAD/
+/zMAADMAMzMAZjMAmTMAzDMA/zMzADMzMzMzZjMzmTMzzDMz/zNmADNmMzNmZjNm
+mTNmzDNm/zOZADOZMzOZZjOZmTOZzDOZ/zPMADPMMzPMZjPMmTPMzDPM/zP/ADP/
+MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YzAGYzM2YzZmYzmWYzzGYz
+/2ZmAGZmM2ZmZmZmmWZmzGZm/2aZAGaZM2aZZmaZmWaZzGaZ/2bMAGbMM2bMZmbM
+mWbMzGbM/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5kzAJkz
+M5kzZpkzmZkzzJkz/5lmAJlmM5lmZplmmZlmzJlm/5mZAJmZM5mZZpmZmZmZzJmZ
+/5nMAJnMM5nMZpnMmZnMzJnM/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswA
+mcwAzMwA/8wzAMwzM8wzZswzmcwzzMwz/8xmAMxmM8xmZsxmmcxmzMxm/8yZAMyZ
+M8yZZsyZmcyZzMyZ/8zMAMzMM8zMZszMmczMzMzM/8z/AMz/M8z/Zsz/mcz/zMz/
+//8AAP8AM/8AZv8Amf8AzP8A//8zAP8zM/8zZv8zmf8zzP8z//9mAP9mM/9mZv9m
+mf9mzP9m//+ZAP+ZM/+ZZv+Zmf+ZzP+Z///MAP/MM//MZv/Mmf/MzP/M////AP//
+M///Zv//mf//zP///yH5BAEAAPwALAAAAAAJAAgAAAgyAP/5g4MChYpt//71I1jQ
+IEJiDRve+GcnYsEY20BZRBHjn0aLOAQyLKjiVsKBJE3+CwgAOw=3D=3D
+  </RecursoImagen>
+  <Caratula>
+    <DefinicionPagina orientacion=3D"P">
+      <Margen superior=3D"10" inferior=3D"10" derecho=3D"10" izquierdo=3D"1=
+0"/>
+    </DefinicionPagina>
+    <Contenido>
+      <Parrafo multilinea=3D"false" rellenarconpuntos=3D"true">
+        <Fuente nombre=3D"Helvetica" tamanio=3D"20"/>
+        <Texto>Esta es una frase t=C3=ADpica</Texto>
+      </Parrafo>
+      <Parrafo multilinea=3D"true" interlineado=3D"1.5">
+        <!--<Bordes>
+          <Borde ubicacion=3D"superior" color=3D"#000000" grosor=3D"0.5"/>
+          <Borde ubicacion=3D"inferior" color=3D"#000000" grosor=3D"0.5"/>
+          <Borde ubicacion=3D"izquierdo" color=3D"#000000" grosor=3D"0.5"/>
+          <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.5"/>
+        </Bordes>-->
+        <Fuente nombre=3D"Helvetica" tamanio=3D"12"/>
+        <FragmentoTexto>
+          <Texto>Este es un ejemplo de un p=C3=A1rrafo compuesto por varios=
+ fragmentos, </Texto>
+        </FragmentoTexto>
+        <FragmentoTexto colorfondo=3D"#FFFF00">
+          <Fuente nombre=3D"Helvetica" tamanio=3D"16"/>       =20
+          <Texto>=C3=81lgunos de ellos con un fondo distinto, y varias T=C3=
+=8Dldes. </Texto>
+        </FragmentoTexto>
+        <FragmentoTexto colorfondo=3D"#FFBB00">
+          <Fuente nombre=3D"Helvetica" tamanio=3D"16"/>       =20
+          <Texto>=C3=93tras c=C3=93sas =C3=8Dnteresantes, caray.</Texto>
+        </FragmentoTexto>
+      </Parrafo>
+      <Tabla colorfondo=3D"#FFBBFF" extenderhastapie=3D"false" etiqueta=3D"=
+Tabla exterior">
+        <Margen izquierdo=3D"20" derecho=3D"20" superior=3D"20" inferior=3D=
+"20"/>
+        <!--<Bordes>
+          <Borde ubicacion=3D"superior" color=3D"#00AA00" grosor=3D"1"/>
+          <Borde ubicacion=3D"inferior" color=3D"#00AA00" grosor=3D"1"/>
+          <Borde ubicacion=3D"izquierdo" color=3D"#00AA00" grosor=3D"1"/>
+          <Borde ubicacion=3D"derecho" color=3D"#00AA00" grosor=3D"1"/>
+        </Bordes>-->
+        <Fuente nombre=3D"Andalus" tamanio=3D"20" color=3D"#000000"/>
+        <Columnas>
+          <Columna ancho=3D"25"/>
+          <!--<Columna ancho=3D"25"/>
+          <Columna ancho=3D"25"/>-->
+        </Columnas>
+        <Cabecera repetirtrassaltopagina=3D"true" etiqueta=3D"Cabecera de t=
+abla exterior">
+          <Bordes>
+            <Borde ubicacion=3D"superior" color=3D"#FF0000" grosor=3D"1.5"/=
+>
+            <Borde ubicacion=3D"inferior" color=3D"#FF0000" grosor=3D"1.5"/=
+>
+            <Borde ubicacion=3D"izquierdo" color=3D"#FF0000" grosor=3D"2.5"=
+/>
+            <Borde ubicacion=3D"derecho" color=3D"#FF0000" grosor=3D"3.5"/>
+          </Bordes>
+          <Fuente nombre=3D"Helvetica" tamanio=3D"8"/>
+          <Fila>
+            <Celda rowspan=3D"1" alineacionvertical=3D"C" alineacionhorizon=
+tal=3D"D">
+              <!--<Bordes>
+                <Borde ubicacion=3D"superior" color=3D"#00000F" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"inferior" color=3D"#00000F" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"izquierdo" color=3D"#00000F" grosor=3D"=
+0.5"/>
+                <Borde ubicacion=3D"derecho" color=3D"#00000F" grosor=3D"0.=
+5"/>
+              </Bordes>-->
+              <Padding superior=3D"1" izquierdo=3D"1" derecho=3D"1" inferio=
+r=3D"1"/>
+              <Parrafo>
+                <Fuente nombre=3D"Helvetica" tamanio=3D"12"/>
+                <Texto>Celda que ocupa dos filas</Texto>
+              </Parrafo>
+              <!--<ImagenByReferencia ancho=3D"20" alto=3D"6" refid=3D"IDRe=
+cursoImagen1" etiqueta=3D"Este es el texto alternativo para la imagen"/>-->
+            </Celda><!--
+            <Celda colspan=3D"2" alineacionvertical=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"inferior" color=3D"#000000" grosor=3D"0=
+.5"/>
+              </Bordes>
+              <Padding superior=3D"1" izquierdo=3D"1" derecho=3D"1" inferio=
+r=3D"1"/>
+              <Parrafo>
+                <Fuente nombre=3D"Helvetica" tamanio=3D"12"/>
+                <Texto>Celda que ocupa dos columnas</Texto>
+              </Parrafo>
+            </Celda>-->
+          </Fila>
+          <!--<Fila>
+            <Celda alineacionhorizontal=3D"C" alineacionvertical=3D"I">
+              <Bordes>
+                <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.=
+5"/>
+              </Bordes>
+              <Padding superior=3D"1" izquierdo=3D"1" derecho=3D"1" inferio=
+r=3D"1"/>
+            </Celda>
+            <Celda alineacionhorizontal=3D"C" alineacionvertical=3D"I" colo=
+rfondo=3D"#FFFF00">
+              <Padding superior=3D"1" izquierdo=3D"1" derecho=3D"1" inferio=
+r=3D"1"/>
+              <Parrafo>
+                <Fuente nombre=3D"Helvetica" tamanio=3D"18"/>
+                <Texto>Subtexto pqg</Texto>
+              </Parrafo>
+            </Celda>
+          </Fila>
+          <Fila colorfondo=3D"#F0A040">
+            <Celda colspan=3D"2" alineacionhorizontal=3D"C" alineacionverti=
+cal=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.=
+5"/>
+                <Borde ubicacion=3D"superior" color=3D"#000000" grosor=3D"0=
+.5"/>
+              </Bordes>
+              <Padding superior=3D"1" izquierdo=3D"1" derecho=3D"1" inferio=
+r=3D"1"/>
+              <Parrafo>
+                <Fuente nombre=3D"Helvetica" tamanio=3D"16"/>
+                <Texto>ZZZ</Texto>
+              </Parrafo>
+            </Celda>
+            <Celda alineacionhorizontal=3D"C" alineacionvertical=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"superior" color=3D"#000000" grosor=3D"0=
+.5"/>
+              </Bordes>
+              <Padding superior=3D"1" izquierdo=3D"1" derecho=3D"1" inferio=
+r=3D"1"/>
+              <Parrafo>
+                <Fuente nombre=3D"Helvetica" tamanio=3D"10"/>
+                <Texto>TTT</Texto>
+              </Parrafo>
+            </Celda>
+          </Fila>-->
+        </Cabecera>
+        <Pijama colores=3D"#B0B0B0"/>
+        <Filas>
+          <!--<Bordes>
+            <Borde ubicacion=3D"superior" color=3D"#AA00FF" grosor=3D"1.5"/=
+>
+            <Borde ubicacion=3D"inferior" color=3D"#AA00FF" grosor=3D"1.5"/=
+>
+            <Borde ubicacion=3D"izquierdo" color=3D"#AA00FF" grosor=3D"2.5"=
+/>
+            <Borde ubicacion=3D"derecho" color=3D"#AA00FF" grosor=3D"3.5"/>
+          </Bordes>-->
+          <Fila alto=3D"50">
+            <Fuente nombre=3D"Helvetica" tamanio=3D"10"/>
+            <Celda alineacionvertical=3D"S" alineacionhorizontal=3D"I">
+              <!--<Bordes>
+                <Borde ubicacion=3D"superior" color=3D"#AAAAFF" grosor=3D"2=
+.5"/>
+                <Borde ubicacion=3D"inferior" color=3D"#AAAAFF" grosor=3D"2=
+.5"/>
+                <Borde ubicacion=3D"izquierdo" color=3D"#AAAAFF" grosor=3D"=
+2.5"/>
+                <Borde ubicacion=3D"derecho" color=3D"#AAAAFF" grosor=3D"2.=
+5"/>
+              </Bordes>-->
+              <Parrafo>
+                <Texto>A</Texto>
+              </Parrafo>
+            </Celda><!--
+            <Celda alineacionvertical=3D"I">
+              <Bordes>
+                <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.=
+3"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Otro m=C3=A1s, que ocupa dos l=C3=ADneas con qqq</Te=
+xto>
+              </Parrafo>
+            </Celda>
+            <Celda alineacionvertical=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"inferior" color=3D"#000000" grosor=3D"0=
+.1"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Y otro</Texto>
+              </Parrafo>
+            </Celda>-->
+          </Fila>
+          <Filas>
+          <Bordes>
+            <Borde ubicacion=3D"superior" color=3D"#AA00FF" grosor=3D"1.5"/=
+>
+            <Borde ubicacion=3D"inferior" color=3D"#AA00FF" grosor=3D"1.5"/=
+>
+            <Borde ubicacion=3D"izquierdo" color=3D"#AA00FF" grosor=3D"2.5"=
+/>
+            <Borde ubicacion=3D"derecho" color=3D"#AA00FF" grosor=3D"3.5"/>
+          </Bordes>
+          <Fila alto=3D"5">
+            <Fuente nombre=3D"Helvetica" tamanio=3D"10"/>
+            <Celda alineacionvertical=3D"S" alineacionhorizontal=3D"I">
+              <!--<Bordes>
+                <Borde ubicacion=3D"superior" color=3D"#0000FF" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"inferior" color=3D"#0000FF" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"izquierdo" color=3D"#0000FF" grosor=3D"=
+0.5"/>
+                <Borde ubicacion=3D"derecho" color=3D"#0000FF" grosor=3D"3.=
+5"/>
+              </Bordes>-->
+              <Parrafo>
+                <Texto>B</Texto>
+              </Parrafo>
+            </Celda><!--
+            <Celda alineacionvertical=3D"I">
+              <Bordes>
+                <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.=
+3"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Otro m=C3=A1s, que ocupa dos l=C3=ADneas con qqq</Te=
+xto>
+              </Parrafo>
+            </Celda>
+            <Celda alineacionvertical=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"inferior" color=3D"#000000" grosor=3D"0=
+.1"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Y otro</Texto>
+              </Parrafo>
+            </Celda>-->
+          </Fila>
+          <Fila alto=3D"5">
+            <Fuente nombre=3D"Helvetica" tamanio=3D"10"/>
+            <Celda alineacionvertical=3D"S" alineacionhorizontal=3D"I">
+              <!--<Bordes>
+                <Borde ubicacion=3D"superior" color=3D"#0000FF" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"inferior" color=3D"#0000FF" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"izquierdo" color=3D"#0000FF" grosor=3D"=
+0.5"/>
+                <Borde ubicacion=3D"derecho" color=3D"#0000FF" grosor=3D"3.=
+5"/>
+              </Bordes>-->
+              <Parrafo>
+                <Texto>C</Texto>
+              </Parrafo>
+            </Celda><!--
+            <Celda alineacionvertical=3D"I">
+              <Bordes>
+                <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.=
+3"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Otro m=C3=A1s, que ocupa dos l=C3=ADneas con qqq</Te=
+xto>
+              </Parrafo>
+            </Celda>
+            <Celda alineacionvertical=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"inferior" color=3D"#000000" grosor=3D"0=
+.1"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Y otro</Texto>
+              </Parrafo>
+            </Celda>-->
+          </Fila>
+        </Filas>
+          <Fila alto=3D"5">
+            <Fuente nombre=3D"Helvetica" tamanio=3D"10"/>
+            <Celda alineacionvertical=3D"S" alineacionhorizontal=3D"I">
+              <!--<Bordes>
+                <Borde ubicacion=3D"superior" color=3D"#0000FF" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"inferior" color=3D"#0000FF" grosor=3D"0=
+.5"/>
+                <Borde ubicacion=3D"izquierdo" color=3D"#0000FF" grosor=3D"=
+0.5"/>
+                <Borde ubicacion=3D"derecho" color=3D"#0000FF" grosor=3D"0.=
+5"/>
+              </Bordes>-->
+              <Parrafo>
+                <Texto>D</Texto>
+              </Parrafo>
+            </Celda><!--
+            <Celda alineacionvertical=3D"I">
+              <Bordes>
+                <Borde ubicacion=3D"derecho" color=3D"#000000" grosor=3D"0.=
+3"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Otro m=C3=A1s, que ocupa dos l=C3=ADneas con qqq</Te=
+xto>
+              </Parrafo>
+            </Celda>
+            <Celda alineacionvertical=3D"C">
+              <Bordes>
+                <Borde ubicacion=3D"inferior" color=3D"#000000" grosor=3D"0=
+.1"/>
+              </Bordes>
+              <Parrafo>
+                <Texto>Y otro</Texto>
+              </Parrafo>
+            </Celda>-->
+          </Fila>
+        </Filas>
+       =20
+      </Tabla>
+      <Parrafo multilinea=3D"false" rellenarconpuntos=3D"true">
+        <Fuente nombre=3D"Helvetica" tamanio=3D"20"/>
+        <Texto>Esta es otra frase t=C3=ADpica</Texto>
+      </Parrafo>
+    </Contenido>
+  </Caratula>
+</GrupoInformes>
+
+------=_Part_16_799571960.1350659465464--

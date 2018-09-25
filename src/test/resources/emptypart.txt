@@ -1,0 +1,13 @@
+------=_Part_7_10584188.1123489648993
+Content-Type: text/xml; charset=utf-8
+Content-Id: soapPart
+
+------=_Part_7_10584188.1123489648993
+Content-Type: text/xml
+Content-ID: attachmentPart
+
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"><Body/></Envelope>
+
+------=_Part_7_10584188.1123489648993--
