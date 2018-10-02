@@ -1,4 +1,4 @@
-# MIME streaming extension
+# MIME Streaming Extension
 
 ### Licensing and Governance
 
