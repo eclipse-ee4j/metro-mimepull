@@ -12,6 +12,7 @@
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.eclipse.ee4j</groupId>
@@ -19,12 +20,10 @@
         <version>1.0.1</version>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
     <groupId>org.jvnet.mimepull</groupId>
     <artifactId>mimepull</artifactId>
     <version>1.9.11-SNAPSHOT</version>
     <packaging>jar</packaging>
-
     <name>MIME streaming extension</name>
     <description>Provides a streaming API to access attachments parts in a MIME message.</description>
     <url>https://github.com/eclipse-ee4j/metro-mimepull</url>
@@ -64,11 +63,11 @@
 
     <mailingLists>
         <mailingList>
-            <name>Eclipse Implementation of JAXB mailing list</name>
-            <post>jaxb-impl-dev@eclipse.org</post>
+            <name>Eclipse Metro mailing list</name>
+            <post>metro-dev@eclipse.org</post>
             <subscribe>https://accounts.eclipse.org/mailing-list/metro-dev</subscribe>
             <unsubscribe>https://accounts.eclipse.org/mailing-list/metro-dev</unsubscribe>
-            <archive>https://dev.eclipse.org/mhonarc/lists/metro-dev</archive>
+            <archive>https://www.eclipse.org/lists/metro-dev</archive>
         </mailingList>
     </mailingLists>
 
