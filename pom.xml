@@ -17,7 +17,7 @@
     <parent>
         <groupId>org.eclipse.ee4j</groupId>
         <artifactId>project</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.4</version>
     </parent>
 
     <groupId>org.jvnet.mimepull</groupId>
@@ -51,11 +51,6 @@
         </developer>
     </developers>
 
-    <organization>
-        <name>Oracle Corporation</name>
-        <url>http://www.oracle.com/</url>
-    </organization>
-
     <issueManagement>
         <system>github</system>
         <url>https://github.com/eclipse-ee4j/metro-mimepull/issues</url>
@@ -74,12 +69,18 @@
     <properties>
         <findbugs.exclude>${project.basedir}/exclude.xml</findbugs.exclude>
         <findbugs.threshold>Low</findbugs.threshold>
+        <legal.doc.source>${project.basedir}</legal.doc.source>
+        <vendor.name>Eclipse Project for JAX-WS</vendor.name>
     </properties>
 
     <build>
 
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
@@ -150,6 +151,30 @@
         </pluginManagement>
 
         <plugins>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-sources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}/META-INF</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${legal.doc.source}</directory>
+                                    <includes>
+                                        <include>LICENSE.md</include>
+                                        <include>NOTICE.md</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <executions>
@@ -261,7 +286,7 @@
                     <dependency>
                         <groupId>org.tmatesoft.svnkit</groupId>
                         <artifactId>svnkit</artifactId>
-                        <version>1.9.2</version>
+                        <version>1.9.3</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -303,6 +328,7 @@
                         </goals>
                         <configuration>
                             <instructions>
+                                <Implementation-Vendor>${vendor.name}</Implementation-Vendor>
                                 <Require-Capability>osgi.ee;filter:="(&amp;(osgi.ee=JavaSE)(version&gt;=1.7))"</Require-Capability>
                             </instructions>
                         </configuration>
