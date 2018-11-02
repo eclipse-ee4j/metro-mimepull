@@ -307,12 +307,6 @@
                 <configuration>
                     <archive>
                         <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        </manifest>
-                        <manifestEntries>
-                            <Implementation-Build-Id>${scmBranch}-${buildNumber}, ${timestamp}</Implementation-Build-Id>
-                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
@@ -329,7 +323,8 @@
                         <configuration>
                             <instructions>
                                 <Implementation-Vendor>${vendor.name}</Implementation-Vendor>
-                                <Require-Capability>osgi.ee;filter:="(&amp;(osgi.ee=JavaSE)(version&gt;=1.7))"</Require-Capability>
+                                <Implementation-Build-Id>${project.groupId}</Implementation-Build-Id>
+                                <_noee>true</_noee>
                             </instructions>
                         </configuration>
                     </execution>
