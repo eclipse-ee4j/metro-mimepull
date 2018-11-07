@@ -140,18 +140,18 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
                     <version>1.4</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.tmatesoft.svnkit</groupId>
-                            <artifactId>svnkit</artifactId>
-                            <version>1.9.3</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
                     <version>3.0.5</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.glassfish.findbugs</groupId>
+                            <artifactId>findbugs</artifactId>
+                            <version>1.0</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.glassfish.copyright</groupId>
@@ -359,13 +359,6 @@
                     <fork>true</fork>
                     <jvmArgs>-Xms64m -Xmx256m</jvmArgs>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.glassfish.findbugs</groupId>
-                        <artifactId>findbugs</artifactId>
-                        <version>1.0</version>
-                    </dependency>
-                </dependencies>
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
