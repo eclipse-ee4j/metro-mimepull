@@ -73,6 +73,15 @@
         <vendor.name>Eclipse Project for JAX-WS</vendor.name>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <build>
 
         <pluginManagement>
@@ -131,6 +140,13 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>buildnumber-maven-plugin</artifactId>
                     <version>1.4</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.tmatesoft.svnkit</groupId>
+                            <artifactId>svnkit</artifactId>
+                            <version>1.9.3</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -217,6 +233,7 @@
                 <configuration>
                     <templateFile>${project.basedir}/copyright.txt</templateFile>
                     <excludeFile>${project.basedir}/copyright-exclude</excludeFile>
+                    <scm>git</scm>
                     <!-- skip files not under SCM-->
                     <scmOnly>true</scmOnly>
                     <!-- turn off warnings -->
@@ -226,6 +243,14 @@
                     <!-- check that year is correct -->
                     <ignoreYear>false</ignoreYear>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>copyright-check</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -233,7 +258,7 @@
                     <execution>
                         <id>default-compile</id>
                         <configuration>
-                            <release>9</release>
+                            <release>11</release>
                         </configuration>
                     </execution>
                     <execution>
@@ -282,13 +307,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.tmatesoft.svnkit</groupId>
-                        <artifactId>svnkit</artifactId>
-                        <version>1.9.3</version>
-                    </dependency>
-                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -329,7 +347,7 @@
                         <configuration>
                             <instructions>
                                 <Implementation-Vendor>${vendor.name}</Implementation-Vendor>
-                                <Require-Capability>osgi.ee;filter:="(&amp;(osgi.ee=JavaSE)(version&gt;=1.7))"</Require-Capability>
+                                <_noee>true</_noee>
                             </instructions>
                         </configuration>
                     </execution>
@@ -374,14 +392,5 @@
         </plugins>
 
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
 </project>
