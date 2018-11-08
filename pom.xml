@@ -70,7 +70,7 @@
         <findbugs.exclude>${project.basedir}/exclude.xml</findbugs.exclude>
         <findbugs.threshold>Low</findbugs.threshold>
         <legal.doc.source>${project.basedir}</legal.doc.source>
-        <vendor.name>Eclipse Project for JAX-WS</vendor.name>
+        <vendor.name>Oracle Corporation</vendor.name>
     </properties>
 
     <dependencyManagement>
