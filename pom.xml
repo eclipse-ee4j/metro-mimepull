@@ -22,7 +22,7 @@
 
     <groupId>org.jvnet.mimepull</groupId>
     <artifactId>mimepull</artifactId>
-    <version>1.9.11</version>
+    <version>1.9.12-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>MIME streaming extension</name>
     <description>Provides a streaming API to access attachments parts in a MIME message.</description>
