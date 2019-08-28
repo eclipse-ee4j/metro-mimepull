@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2019 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -22,10 +22,8 @@ import java.util.List;
  */
 public class ParsingTest extends TestCase {
 
-    private static final String PATH = "../../../";
-
     public void testMsg() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "msg.txt");
+        InputStream in = getClass().getResourceAsStream("/msg.txt");
         String boundary = "----=_Part_4_910054940.1065629194743";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -55,7 +53,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testMsg2() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "msg2.txt");
+        InputStream in = getClass().getResourceAsStream("/msg2.txt");
         String boundary = "----=_Part_1_807283631.1066069460327";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -67,7 +65,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testMessage1() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "message1.txt");
+        InputStream in = getClass().getResourceAsStream("/message1.txt");
         String boundary = "----=_Part_7_10584188.1123489648993";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -106,7 +104,7 @@ public class ParsingTest extends TestCase {
 
     // Test for MIMEPULL-3 issue.
     public void testReadEOF() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "message1.txt");
+        InputStream in = getClass().getResourceAsStream("/message1.txt");
         String boundary = "----=_Part_7_10584188.1123489648993";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -132,7 +130,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testEmptyPart() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "emptypart.txt");
+        InputStream in = getClass().getResourceAsStream("/emptypart.txt");
         String boundary = "----=_Part_7_10584188.1123489648993";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -159,7 +157,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testNoHeaders() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "noheaders.txt");
+        InputStream in = getClass().getResourceAsStream("/noheaders.txt");
         String boundary = "----=_Part_7_10584188.1123489648993";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -171,7 +169,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testOneByte() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "onebyte.txt");
+        InputStream in = getClass().getResourceAsStream("/onebyte.txt");
         String boundary = "boundary";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -183,7 +181,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testBoundaryWhiteSpace() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "boundary-lwsp.txt");
+        InputStream in = getClass().getResourceAsStream("/boundary-lwsp.txt");
         String boundary = "boundary";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -195,7 +193,7 @@ public class ParsingTest extends TestCase {
     }
 
     public void testBoundaryInBody() throws Exception {
-        InputStream in = getClass().getResourceAsStream(PATH + "boundary-in-body.txt");
+        InputStream in = getClass().getResourceAsStream("/boundary-in-body.txt");
         String boundary = "boundary";
         MIMEConfig config = new MIMEConfig();
         MIMEMessage mm = new MIMEMessage(in, boundary , config);
@@ -210,7 +208,7 @@ public class ParsingTest extends TestCase {
 
         boolean gotException = false;
         try {
-            String fileName = PATH + "msg-no-closing-boundary.txt";
+            String fileName = "/msg-no-closing-boundary.txt";
             InputStream in = getClass().getResourceAsStream(fileName);
             assertNotNull("Failed to load test data from " + fileName, in);
             MIMEConfig config = new MIMEConfig();
@@ -230,7 +228,7 @@ public class ParsingTest extends TestCase {
 
         boolean gotException = false;
         try {
-            String fileName = PATH + "msg-invalid-closing-boundary.txt";
+            String fileName = "/msg-invalid-closing-boundary.txt";
             InputStream in = getClass().getResourceAsStream(fileName);
             assertNotNull("Failed to load test data from " + fileName, in);
             MIMEConfig config = new MIMEConfig();
