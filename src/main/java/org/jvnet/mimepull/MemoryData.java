@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -13,6 +13,8 @@ package org.jvnet.mimepull;
 import java.nio.ByteBuffer;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -63,7 +65,7 @@ final class MemoryData implements Data {
             try {
                 String prefix = config.getTempFilePrefix();
                 String suffix = config.getTempFileSuffix();
-                File tempFile = TempFiles.createTempFile(prefix, suffix, config.getTempDir());
+                File tempFile = createTempFile(prefix, suffix, config.getTempDir());
                 // delete the temp file when VM exits as a last resort for file clean up
                 tempFile.deleteOnExit();
                 if (LOGGER.isLoggable(Level.FINE)) {
@@ -86,4 +88,12 @@ final class MemoryData implements Data {
         }
     }
 
+    private static File createTempFile(String prefix, String suffix, File dir) throws IOException {
+        if (dir != null) {
+            Path path = dir.toPath();
+            return Files.createTempFile(path, prefix, suffix).toFile();
+        } else {
+            return Files.createTempFile(prefix, suffix).toFile();
+        }
+    }
 }
