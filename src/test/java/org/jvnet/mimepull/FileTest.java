@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2015, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -28,19 +28,19 @@ public class FileTest extends TestCase {
         // Mime message.
         final MIMEConfig config = new MIMEConfig();
         config.setMemoryThreshold(4096);
-        final MIMEMessage message = new MIMEMessage(getInputStream(PART_SIZE), BOUNDARY, config);
-        final MIMEPart part = message.getAttachments().get(0);
+        try (final MIMEMessage message = new MIMEMessage(getInputStream(PART_SIZE), BOUNDARY, config)) {
+            final MIMEPart part = message.getAttachments().get(0);
 
-        // Temp file to move MIME temp file to.
-        final File tempFile = File.createTempFile("ship", "it");
-        tempFile.deleteOnExit();
+            // Temp file to move MIME temp file to.
+            final File tempFile = File.createTempFile("ship", "it");
+            tempFile.deleteOnExit();
 
-        // Move the file.
-        part.moveTo(tempFile);
+            // Move the file.
+            part.moveTo(tempFile);
 
-        // Check the file length.
-        assertEquals("Destination temp file doesn't seem to have expected size.", PART_SIZE, tempFile.length());
-
+            // Check the file length.
+            assertEquals("Destination temp file doesn't seem to have expected size.", PART_SIZE, tempFile.length());
+        }
     }
 
     /**

@@ -39,7 +39,7 @@ final class WeakDataFile extends WeakReference<DataFile> {
     //private static final int MAX_ITERATIONS = 2;
     private static ReferenceQueue<DataFile> refQueue = new ReferenceQueue<DataFile>();
     private static List<WeakDataFile> refList = new ArrayList<WeakDataFile>();
-    private final File file;
+    private File file;
     private final RandomAccessFile raf;
     private static boolean hasCleanUpExecutor = false;
     static {
@@ -129,6 +129,7 @@ final class WeakDataFile extends WeakReference<DataFile> {
                             " was not moved to " + f.getAbsolutePath());
                 }
             }
+            file = target.toFile();
         } catch(IOException ioe) {
             throw new MIMEParsingException(ioe);
         }

@@ -30,6 +30,8 @@ final class MemoryData implements Data {
     private final byte[] data;
     private final int len;
     private final MIMEConfig config;
+    // default to false to avoid memory leak through java.io.DeleteOnExitHook.files
+    private static final boolean DELETE_ON_EXIT = Boolean.getBoolean("org.jvnet.mimepull.deletetemponexit");
 
     MemoryData(ByteBuffer buf, MIMEConfig config) {
         data = buf.array();
@@ -67,7 +69,9 @@ final class MemoryData implements Data {
                 String suffix = config.getTempFileSuffix();
                 File tempFile = createTempFile(prefix, suffix, config.getTempDir());
                 // delete the temp file when VM exits as a last resort for file clean up
-                tempFile.deleteOnExit();
+                if (DELETE_ON_EXIT) {
+                    tempFile.deleteOnExit();
+                }
                 if (LOGGER.isLoggable(Level.FINE)) {
                     LOGGER.log(Level.FINE, "Created temp file = {0}", tempFile);
                 }
