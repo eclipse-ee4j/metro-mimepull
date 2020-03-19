@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -28,7 +28,7 @@ import java.util.logging.Logger;
 
 /**
  * Removing files based on this
- * <a href="http://java.sun.com/developer/technicalArticles/javase/finalization/">article</a>
+ * <a href="https://www.oracle.com/technical-resources/articles/javase/finalization.html">article</a>
  *
  * @author Jitendra Kotamraju
  */
@@ -43,15 +43,15 @@ final class WeakDataFile extends WeakReference<DataFile> {
     private final RandomAccessFile raf;
     private static boolean hasCleanUpExecutor = false;
     static {
-    	int delay = 10;
-    	try {
-    		delay = Integer.getInteger("org.jvnet.mimepull.delay", 10);
-    	} catch (SecurityException se) {
+        int delay = 10;
+        try {
+            delay = Integer.getInteger("org.jvnet.mimepull.delay", 10);
+        } catch (SecurityException se) {
             if (LOGGER.isLoggable(Level.CONFIG)) {
                 LOGGER.log(Level.CONFIG, "Cannot read ''{0}'' property, using defaults.",
                         new Object[] {"org.jvnet.mimepull.delay"});
-            } 
-    	}
+            }
+        }
         CleanUpExecutorFactory executorFactory = CleanUpExecutorFactory.newInstance();
         if (executorFactory!=null) {
             if (LOGGER.isLoggable(Level.FINE)) {
@@ -144,24 +144,25 @@ final class WeakDataFile extends WeakReference<DataFile> {
             weak.close();
         }
     }
-    
-private static class CleanupRunnable implements Runnable {
-    @Override
-    public void run() {
-        try {
-            if (LOGGER.isLoggable(Level.FINE)) {
-                LOGGER.log(Level.FINE, "Running cleanup task");
-            }
-        	WeakDataFile weak = (WeakDataFile) refQueue.remove(TIMEOUT);
-            while (weak != null) {
+
+    private static class CleanupRunnable implements Runnable {
+
+        @Override
+        public void run() {
+            try {
                 if (LOGGER.isLoggable(Level.FINE)) {
-                    LOGGER.log(Level.FINE, "Cleaning file = {0} from reference queue.", weak.file);
+                    LOGGER.log(Level.FINE, "Running cleanup task");
                 }
-                weak.close();
-                weak = (WeakDataFile) refQueue.remove(TIMEOUT);
+                WeakDataFile weak = (WeakDataFile) refQueue.remove(TIMEOUT);
+                while (weak != null) {
+                    if (LOGGER.isLoggable(Level.FINE)) {
+                        LOGGER.log(Level.FINE, "Cleaning file = {0} from reference queue.", weak.file);
+                    }
+                    weak.close();
+                    weak = (WeakDataFile) refQueue.remove(TIMEOUT);
+                }
+            } catch (InterruptedException e) {
             }
-        } catch (InterruptedException e) {
         }
     }
-}    
 }
