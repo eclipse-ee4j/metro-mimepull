@@ -73,6 +73,15 @@
  * and the commencement of the next in seconds. The default is 10 seconds.</td>
  * </tr>
  *
+ * <tr>
+ *  <td><a id="org.jvnet.mimepull.deletetemponexit">org.jvnet.mimepull.deletetemponexit</a></td>
+ *  <td>boolean</td>
+ *  <td>If set to {@code true}, temporary files will be marked as {@code deleteOnExit}. This may be typically needed if the application
+ * does not properly close {@link org.jvnet.mimepull.MIMEMessage}. Note however that setting this to {@code true} permanently adds an entry
+ * to a list of files to be deleted on JVM shutdown leading to a significant memory leak in long running server applications eventually,
+ * so this should be used with extreme caution. The default is false.</td>
+ * </tr>
+ *
  * </table>
  *
  */

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -163,7 +163,8 @@ public class MIMEMessage implements Closeable {
     }
 
     /**
-     * Closes all parsed {@link org.jvnet.mimepull.MIMEPart parts}.
+     * Closes all parsed {@link org.jvnet.mimepull.MIMEPart parts} and cleans up
+     * any resources that are held by this {@code MIMEMessage} (for e.g. deletes temp files).
      * This method is safe to call even if parsing of message failed.
      *
      * <p> Does not throw {@link org.jvnet.mimepull.MIMEParsingException} if an
