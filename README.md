@@ -30,3 +30,4 @@ the terms of [Eclipse Contributor Agreement](http://www.eclipse.org/legal/ECA.ph
 
 * [Introducing mimepull](https://community.oracle.com/blogs/jitu/2007/10/12/introducing-mimepull-streaming-api-mime-messages)
 * [Mailing list](https://accounts.eclipse.org/mailing-list/metro-dev)
+* [Configuration](https://javadoc.io/doc/org.jvnet.mimepull/mimepull/latest/org.jvnet.mimepull/module-summary.html#properties)
