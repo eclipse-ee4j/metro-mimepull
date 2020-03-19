@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -10,69 +10,30 @@
 
 package org.jvnet.mimepull;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Iterator;
+import java.util.ServiceLoader;
 
 class FactoryFinder {
 
-    private static ClassLoader cl = FactoryFinder.class.getClassLoader();
-
-    static Object find(String factoryId) throws ClassNotFoundException,
-            InstantiationException, IllegalAccessException {
-        String systemProp = System.getProperty(factoryId);
+    static <T> T find(Class<T> factoryId) throws ClassNotFoundException, ReflectiveOperationException {
+        String systemProp = System.getProperty(factoryId.getName());
         if (systemProp != null) {
-            return newInstance(systemProp);
+            return newInstance(factoryId, systemProp);
         }
 
-        String providerName = findJarServiceProviderName(factoryId);
-        if (providerName != null && providerName.trim().length() > 0) {
-            return newInstance(providerName);
+        Iterator<T> loader = ServiceLoader.load(factoryId).iterator();
+        if (loader.hasNext()) {
+            return loader.next();
         }
 
         return null;
     }
 
-    static Object newInstance(String className) throws ClassNotFoundException,
-            InstantiationException, IllegalAccessException {
-        Class providerClass = cl.loadClass(className);
-        Object instance = providerClass.newInstance();
+    static <T> T newInstance(Class<T> cls, String className) throws ClassNotFoundException, ReflectiveOperationException {
+        @SuppressWarnings("unchecked")
+        Class<T> providerClass = (Class<T>) FactoryFinder.class.getClassLoader().loadClass(className);
+        T instance = providerClass.getConstructor().newInstance();
         return instance;
-    }
-
-    private static String findJarServiceProviderName(String factoryId) {
-        String serviceId = "META-INF/services/" + factoryId;
-        InputStream is;
-        is = cl.getResourceAsStream(serviceId);
-
-        if (is == null) {
-            return null;
-        }
-
-        String factoryClassName;
-        BufferedReader rd = null;
-        try {
-            rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
-            try {
-                factoryClassName = rd.readLine();
-            } catch (IOException x) {
-                return null;
-            }
-        } finally {
-            if (rd != null) {
-                try {
-                    rd.close();
-                } catch (IOException ex) {
-                    Logger.getLogger(FactoryFinder.class.getName()).log(Level.INFO, null, ex);
-                }
-            }
-        }
-
-        return factoryClassName;
     }
 
 }
