@@ -326,7 +326,7 @@
                         </goals>
                         <configuration>
                             <instructions>
-                                <_removeheaders>Bnd-LastModified,Built-By</_removeheaders>
+                                <_removeheaders>Bnd-LastModified,Built-By,Include-Resource</_removeheaders>
                                 <Implementation-Build-Id>${project.version} - ${scmBranch}-${buildNumber}</Implementation-Build-Id>
                             </instructions>
                         </configuration>
@@ -338,6 +338,7 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
                     <release>11</release>
+                    <notimestamp>true</notimestamp>
                 </configuration>
             </plugin>
             <plugin>
