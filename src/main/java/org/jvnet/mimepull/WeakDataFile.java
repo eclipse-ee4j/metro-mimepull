@@ -20,8 +20,8 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -38,7 +38,7 @@ final class WeakDataFile extends WeakReference<DataFile> {
     private static int TIMEOUT = 10; //milliseconds
     //private static final int MAX_ITERATIONS = 2;
     private static ReferenceQueue<DataFile> refQueue = new ReferenceQueue<DataFile>();
-    private static List<WeakDataFile> refList = new ArrayList<WeakDataFile>();
+    private static Queue<WeakDataFile> refList = new ConcurrentLinkedQueue<>();
     private File file;
     private final RandomAccessFile raf;
     private static boolean hasCleanUpExecutor = false;
