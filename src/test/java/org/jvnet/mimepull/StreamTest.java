@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2010, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -162,6 +162,7 @@ public class StreamTest extends TestCase {
 
         for(int i=0; i < threads.length; i++) {
             threads[i] = new Thread(new Runnable() {
+                @Override
                 public void run() {
                     try {
                         verifyPart(partA.read(), 0, size);

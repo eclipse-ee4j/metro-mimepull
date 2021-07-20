@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -43,8 +43,8 @@ public class MIMEMessage implements Closeable {
     private MIMEPart currentPart;
     private int currentIndex;
 
-    private final List<MIMEPart> partsList = new ArrayList<MIMEPart>();
-    private final Map<String, MIMEPart> partsMap = new HashMap<String, MIMEPart>();
+    private final List<MIMEPart> partsList = new ArrayList<>();
+    private final Map<String, MIMEPart> partsMap = new HashMap<>();
 
     /**
      * @see #MIMEMessage(InputStream, String, MIMEConfig)
