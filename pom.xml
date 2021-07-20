@@ -260,7 +260,7 @@
                             </excludes>
                         </configuration>
                     </execution>
-                </executions>-->
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
