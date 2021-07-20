@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -21,6 +21,8 @@ package org.jvnet.mimepull;
  */
 
 public class MIMEParsingException extends java.lang.RuntimeException {
+
+    private static final long serialVersionUID = 1L;
 
     /**
      * Constructs a new exception with <code>null</code> as its

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -44,18 +44,21 @@ abstract class MIMEEvent {
     static final EndMessage END_MESSAGE = new EndMessage();
 
     static final class StartMessage extends MIMEEvent {
+        @Override
         EVENT_TYPE getEventType() {
             return EVENT_TYPE.START_MESSAGE;
         }
     }
 
     static final class StartPart extends MIMEEvent {
+        @Override
         EVENT_TYPE getEventType() {
             return EVENT_TYPE.START_PART;
         }
     }
 
     static final class EndPart extends MIMEEvent {
+        @Override
         EVENT_TYPE getEventType () {
             return EVENT_TYPE.END_PART;
         }
@@ -68,6 +71,7 @@ abstract class MIMEEvent {
             this.ih = ih;
         }
 
+        @Override
         EVENT_TYPE getEventType() {
             return EVENT_TYPE.HEADERS;
         }
@@ -84,6 +88,7 @@ abstract class MIMEEvent {
             this.buf = buf;
         }
 
+        @Override
         EVENT_TYPE getEventType() {
             return EVENT_TYPE.CONTENT;
         }
@@ -94,6 +99,7 @@ abstract class MIMEEvent {
     }
 
     static final class EndMessage extends MIMEEvent {
+        @Override
         EVENT_TYPE getEventType() {
             return EVENT_TYPE.END_MESSAGE;
         }

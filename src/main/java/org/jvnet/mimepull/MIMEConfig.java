@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -51,6 +51,9 @@ public class MIMEConfig {
         setDir(dir);
     }
 
+    /**
+     * Create new MIMEConfig
+     */
     public MIMEConfig() {
         this(false, DEFAULT_CHUNK_SIZE, DEFAULT_MEMORY_THRESHOLD, null,
                 DEFAULT_FILE_PREFIX, null);
@@ -60,6 +63,10 @@ public class MIMEConfig {
         return parseEagerly;
     }
 
+    /**
+     * Sets whether message should be parsed eagerly.
+     * @param parseEagerly true if to parse eagerly
+     */
     public void setParseEagerly(boolean parseEagerly) {
         this.parseEagerly = parseEagerly;
     }

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2018 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -44,7 +44,7 @@ import java.util.List;
  */
 final class InternetHeaders {
 
-    private final FinalArrayList<Hdr> headers = new FinalArrayList<Hdr>();
+    private final FinalArrayList<Hdr> headers = new FinalArrayList<>();
 
     /**
      * Read and parse the given RFC822 message stream till the
@@ -105,16 +105,16 @@ final class InternetHeaders {
      */
     List<String> getHeader(String name) {
         // XXX - should we just step through in index order?
-        FinalArrayList<String> v = new FinalArrayList<String>(); // accumulate return values
+        FinalArrayList<String> v = new FinalArrayList<>(); // accumulate return values
 
         int len = headers.size();
         for( int i=0; i<len; i++ ) {
-            Hdr h = (Hdr) headers.get(i);
+            Hdr h = headers.get(i);
             if (name.equalsIgnoreCase(h.name)) {
                 v.add(h.getValue());
             }
         }
-        return (v.size() == 0) ? null : v;
+        return (v.isEmpty()) ? null : v;
     }
 
     /**
@@ -140,15 +140,13 @@ final class InternetHeaders {
         try {
             char c = line.charAt(0);
             if (c == ' ' || c == '\t') {
-                Hdr h = (Hdr) headers.get(headers.size() - 1);
+                Hdr h = headers.get(headers.size() - 1);
                 h.line += "\r\n" + line;
             } else {
                 headers.add(new Hdr(line));
             }
-        } catch (StringIndexOutOfBoundsException e) {
-            // line is empty, ignore it
-        } catch (NoSuchElementException e) {
-            // XXX - vector is empty?
+        } catch (StringIndexOutOfBoundsException | NoSuchElementException e) {
+            // ignore empty lines and empty vector(?)
         }
     }
 
