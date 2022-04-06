@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -13,9 +13,9 @@ package org.jvnet.mimepull;
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -142,12 +142,8 @@ public class MIMEMessage implements Closeable {
         MIMEPart part = partsMap.get(cid);
         if (part == null) {
             if (cid.indexOf('%') != -1) {
-                try {
-                    String tempCid = URLDecoder.decode(cid, "utf-8");
-                    part = partsMap.get(tempCid);
-                } catch (UnsupportedEncodingException ue) {
-                    // Ignore it
-                }
+                String tempCid = URLDecoder.decode(cid, StandardCharsets.UTF_8);
+                part = partsMap.get(tempCid);
             }
         }
         return part;
