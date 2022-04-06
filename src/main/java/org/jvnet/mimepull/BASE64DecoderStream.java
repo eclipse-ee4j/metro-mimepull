@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -92,7 +92,6 @@ final class BASE64DecoderStream extends FilterInputStream {
      * Reads up to <code>len</code> decoded bytes of data from this input stream
      * into an array of bytes. This method blocks until some input is
      * available.
-     * <p>
      *
      * @param      buf   the buffer into which the data is read.
      * @param      off   the start offset of the data.
