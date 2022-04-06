@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2010, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -10,8 +10,9 @@
 
 package org.jvnet.mimepull;
 
-import junit.framework.TestCase;
 import junit.framework.AssertionFailedError;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.InputStream;
 import java.io.BufferedInputStream;
@@ -20,20 +21,26 @@ import java.io.IOException;
 /**
  * @author Jitendra Kotamraju
  */
-public class StreamTest extends TestCase {
+public class StreamTest {
 
+    public StreamTest() {}
+
+    @Test
     public void testOrderRead() throws Exception {
         testOrderRead(123456789);
     }
 
+    @Test
     public void testPartSize9195() throws Exception {
         testOrderRead(9195);
     }
 
+    @Test
     public void testPartSize9196() throws Exception {
         testOrderRead(9196);
     }
 
+    @Test
     public void testAllPartSizes() throws Exception {
         for (int size = 0; size < 50000; size++) {
             if (size %1000 == 0) {
@@ -48,6 +55,7 @@ public class StreamTest extends TestCase {
         }
     }
 
+    @Test
     public void testAllPartSizesForBufferedStream() throws Exception {
         for (int size = 0; size < 50000; size++) {
             if (size %1000 == 0) {
@@ -86,6 +94,7 @@ public class StreamTest extends TestCase {
 
     // Parts are accessed in order. The data is accessed using readOnce()
     // and there shouldn't be any data stored in temp files.
+    @Test
     public void testOrderReadOnce() throws Exception {
         String boundary = "boundary";
         int size = 123456789;
@@ -107,6 +116,7 @@ public class StreamTest extends TestCase {
 
     // partB, partA, partC are accessed in that order. Then partA should
     // go to disk. partB, and partC are accessed from in-memory
+    @Test
     public void testOutofOrderRead() throws Exception {
         String boundary = "boundary";
         int size = 12345678;
@@ -128,6 +138,7 @@ public class StreamTest extends TestCase {
 
     // partB, partA, partC are accessed in that order. Then partA should
     // go to disk. partB, and partC are accessed from in-memory
+    @Test
     public void testOutofOrderReadOnce() throws Exception {
         String boundary = "boundary";
         int size = 12345678;
@@ -147,6 +158,7 @@ public class StreamTest extends TestCase {
     }
 
     // MIMEPart.read() is called twice
+    @Test
     public void testOutofOrderMultipleRead() throws Exception {
         String boundary = "boundary";
         final int size = 12345678;
@@ -167,7 +179,7 @@ public class StreamTest extends TestCase {
                     try {
                         verifyPart(partA.read(), 0, size);
                     } catch(Exception e) {
-                        fail();
+                        Assert.fail();
                     }
                 }
             });
@@ -191,9 +203,9 @@ public class StreamTest extends TestCase {
         int i = 0;
         int ch;
         while((ch=in.read()) != -1) {
-            assertEquals((byte)('A'+(partNo+i++)%26), (byte)ch);
+            Assert.assertEquals((byte)('A'+(partNo+i++)%26), (byte)ch);
         }
-        assertEquals(size, i);
+        Assert.assertEquals(size, i);
         in.close();
     }
     */
@@ -204,11 +216,11 @@ public class StreamTest extends TestCase {
         int len;
         while((len=in.read(buf, 0, buf.length)) != -1) {
             for(int i=0; i < len; i++) {
-                assertEquals((byte)('A'+(partNo+total+i)%26), buf[i]);
+                Assert.assertEquals((byte)('A'+(partNo+total+i)%26), buf[i]);
             }
             total += len;
         }
-        assertEquals(size, total);
+        Assert.assertEquals(size, total);
         in.close();
     }
 

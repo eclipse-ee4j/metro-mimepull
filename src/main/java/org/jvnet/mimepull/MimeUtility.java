@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -42,7 +42,7 @@ import java.io.*;
  * <p>
  * Note that to get the actual bytes of a mail-safe String (say,
  * for sending over SMTP), one must do 
- * <p><blockquote><pre>
+ * <blockquote><pre>
  *
  *	byte[] bytes = string.getBytes("iso-8859-1");	
  *
@@ -130,7 +130,7 @@ final class MimeUtility {
      * @param	is		input stream
      * @param	encoding	the encoding of the stream.
      * @return			decoded input stream.
-     * @exception MessagingException	if the encoding is unknown
+     * @exception DecodingException	if the encoding is unknown
      */
     public static InputStream decode(InputStream is, String encoding)
 		throws DecodingException {

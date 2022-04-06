@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -23,7 +23,7 @@ import java.util.logging.Level;
  *
  * <pre>
  * for e.g.:
- * <p>
+ * {@code
  *
  * MIMEParser parser = ...
  * Iterator<MIMEEvent> it = parser.iterator();
@@ -31,7 +31,7 @@ import java.util.logging.Level;
  *   MIMEEvent event = it.next();
  *   ...
  * }
- * </pre>
+ * }</pre>
  *
  * @author Jitendra Kotamraju
  */
@@ -107,6 +107,7 @@ class MIMEParser implements Iterable<MIMEEvent> {
         }
 
         @Override
+        @SuppressWarnings({"fallthrough"})
         public MIMEEvent next() {
 
             if (parsed) {

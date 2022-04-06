@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2015, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -14,16 +14,20 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import junit.framework.TestCase;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * @author Michal Gajdos (michal.gajdos at oracle.com)
  */
-public class FileTest extends TestCase {
+public class FileTest {
 
     private static final String BOUNDARY = "boundary";
     private static final int PART_SIZE = 4 * 8192;
 
+    public FileTest() {}
+
+    @Test
     public void testMoveTo() throws Exception {
         // Mime message.
         final MIMEConfig config = new MIMEConfig();
@@ -39,7 +43,7 @@ public class FileTest extends TestCase {
             part.moveTo(tempFile);
 
             // Check the file length.
-            assertEquals("Destination temp file doesn't seem to have expected size.", PART_SIZE, tempFile.length());
+            Assert.assertEquals("Destination temp file doesn't seem to have expected size.", PART_SIZE, tempFile.length());
         }
     }
 

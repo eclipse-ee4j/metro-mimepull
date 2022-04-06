@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -20,13 +20,13 @@ import java.util.List;
  * until the blank line that indicates end of header. The input stream
  * is positioned at the start of the body. The lines are stored
  * within the object and can be extracted as either Strings or
- * {@link Header} objects. <p>
- * <p/>
+ * {@link Header} objects.
+ * <p>
  * This class is mostly intended for service providers. MimeMessage
- * and MimeBody use this class for holding their headers. <p>
- * <p/>
- * <hr> <strong>A note on RFC822 and MIME headers</strong><p>
- * <p/>
+ * and MimeBody use this class for holding their headers.
+ *
+ * <hr> <strong>A note on RFC822 and MIME headers</strong>
+ * <p>
  * RFC822 and MIME header fields <strong>must</strong> contain only
  * US-ASCII characters. If a header contains non US-ASCII characters,
  * it must be encoded as per the rules in RFC 2047. The MimeUtility
@@ -37,7 +37,7 @@ import java.util.List;
  * header fields must be folded (wrapped) before being sent if they
  * exceed the line length limitation for the transport (1000 bytes for
  * SMTP).  Received headers may have been folded.  The application is
- * responsible for folding and unfolding headers as appropriate. <p>
+ * responsible for folding and unfolding headers as appropriate.
  *
  * @author John Mani
  * @author Bill Shannon
@@ -49,8 +49,8 @@ final class InternetHeaders {
     /**
      * Read and parse the given RFC822 message stream till the
      * blank line separating the header from the body. Store the
-     * header lines inside this InternetHeaders object. <p>
-     * <p/>
+     * header lines inside this InternetHeaders object.
+     * <p>
      * Note that the header lines are added into this InternetHeaders
      * object, so any existing headers in this object will not be
      * affected.
@@ -130,8 +130,8 @@ final class InternetHeaders {
     /**
      * Add an RFC822 header line to the header store.
      * If the line starts with a space or tab (a continuation line),
-     * add it to the last header line in the list. <p>
-     * <p/>
+     * add it to the last header line in the list.
+     * <p>
      * Note that RFC822 headers can only contain US-ASCII characters
      *
      * @param	line	raw RFC822 header line
