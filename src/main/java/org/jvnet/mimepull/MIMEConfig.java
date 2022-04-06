@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -136,9 +136,7 @@ public class MIMEConfig {
                         LOGGER.log(Level.INFO, "File {0} was not deleted", tempFile.getAbsolutePath());
                     }
                 }
-            } catch(RuntimeException e) {
-                memoryThreshold = -1L;      // whole attachment will be in-memory
-            } catch(Exception e) {
+            } catch(Throwable e) {
                 memoryThreshold = -1L;      // whole attachment will be in-memory
             }
         }

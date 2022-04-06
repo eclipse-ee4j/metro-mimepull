@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -11,15 +11,11 @@
 package org.jvnet.mimepull;
 
 /**
- * @author Jitendra Kotamraju
- */
-
-/**
  * The <code>MIMEParsingException</code> class is the base
  * exception class for all MIME message parsing exceptions.
  *
+ * @author Jitendra Kotamraju
  */
-
 public class MIMEParsingException extends java.lang.RuntimeException {
 
     private static final long serialVersionUID = 1L;
