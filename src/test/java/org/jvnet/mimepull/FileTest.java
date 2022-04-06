@@ -11,7 +11,6 @@
 package org.jvnet.mimepull;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
 
 import org.junit.Assert;
@@ -72,7 +71,7 @@ public class FileTest {
             int i, j;
 
             @Override
-            public int read() throws IOException {
+            public int read() {
                 if (i >= data.length) {
                     return -1;
                 } else if (data[i] == '1' || data[i] == '2' || data[i] == '3') {

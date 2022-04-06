@@ -57,7 +57,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testMsg2() throws Exception {
+    public void testMsg2() {
         InputStream in = getClass().getResourceAsStream("/msg2.txt");
         String boundary = "----=_Part_1_807283631.1066069460327";
         MIMEConfig config = new MIMEConfig();
@@ -165,7 +165,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testNoHeaders() throws Exception {
+    public void testNoHeaders() {
         InputStream in = getClass().getResourceAsStream("/noheaders.txt");
         String boundary = "----=_Part_7_10584188.1123489648993";
         MIMEConfig config = new MIMEConfig();
@@ -178,7 +178,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testOneByte() throws Exception {
+    public void testOneByte() {
         InputStream in = getClass().getResourceAsStream("/onebyte.txt");
         String boundary = "boundary";
         MIMEConfig config = new MIMEConfig();
@@ -191,7 +191,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testBoundaryWhiteSpace() throws Exception {
+    public void testBoundaryWhiteSpace() {
         InputStream in = getClass().getResourceAsStream("/boundary-lwsp.txt");
         String boundary = "boundary";
         MIMEConfig config = new MIMEConfig();
@@ -204,7 +204,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testBoundaryInBody() throws Exception {
+    public void testBoundaryInBody() {
         InputStream in = getClass().getResourceAsStream("/boundary-in-body.txt");
         String boundary = "boundary";
         MIMEConfig config = new MIMEConfig();
@@ -217,7 +217,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testNoClosingBoundary() throws Exception {
+    public void testNoClosingBoundary() {
 
         boolean gotException = false;
         try {
@@ -238,7 +238,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testInvalidClosingBoundary() throws Exception {
+    public void testInvalidClosingBoundary() {
 
         boolean gotException = false;
         try {
@@ -259,7 +259,7 @@ public class ParsingTest {
     }
 
     @Test
-    public void testInvalidMimeMessage() throws Exception {
+    public void testInvalidMimeMessage() {
         final String invalidMessage = "--boundary\n"
                 + "Content-Id: part1\n"
                 + "\n"

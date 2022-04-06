@@ -270,7 +270,7 @@ class MIMEParser implements Iterable<MIMEEvent> {
     }
 
     private void createBuf(int min) {
-        buf = new byte[min < capacity ? capacity : min];
+        buf = new byte[Math.max(min, capacity)];
     }
 
     /**

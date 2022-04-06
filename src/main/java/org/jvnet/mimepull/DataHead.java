@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1997, 2021 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1997, 2022 Oracle and/or its affiliates. All rights reserved.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Distribution License v. 1.0, which is available at
@@ -68,17 +68,12 @@ final class DataHead {
             dataFile.renameTo(f);
         } else {
             try {
-                OutputStream os = new FileOutputStream(f);
-                try {
+                try (OutputStream os = new FileOutputStream(f)) {
                     InputStream in = readOnce();
                     byte[] buf = new byte[8192];
                     int len;
-                    while((len=in.read(buf)) != -1) {
+                    while ((len = in.read(buf)) != -1) {
                         os.write(buf, 0, len);
-                    }
-                } finally {
-                    if (os != null) {
-                        os.close();
                     }
                 }
             } catch(IOException ioe) {
@@ -185,7 +180,7 @@ final class DataHead {
         }
 
         @Override
-        public int read(byte b[], int off, int sz) throws IOException {
+        public int read(byte[] b, int off, int sz) throws IOException {
             if (!fetch()) {
                 return -1;
             }

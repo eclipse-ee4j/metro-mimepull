@@ -36,7 +36,7 @@ final class ChunkInputStream extends InputStream {
     }
 
     @Override
-    public int read(byte b[], int off, int sz) throws IOException {
+    public int read(byte[] b, int off, int sz) {
         if (!fetch()) {
             return -1;
         }
@@ -47,7 +47,7 @@ final class ChunkInputStream extends InputStream {
     }
 
     @Override
-    public int read() throws IOException {
+    public int read() {
         if (!fetch()) {
             return -1;
         }

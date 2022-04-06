@@ -34,7 +34,7 @@ public class QuotedTest {
         List<MIMEPart> parts = mm.getAttachments();
         MIMEPart part1 = parts.get(1);
 
-        Assert.assertTrue(part1.getContentTransferEncoding().equals("quoted-printable"));
+        Assert.assertEquals("quoted-printable", part1.getContentTransferEncoding());
 
         InputStream is = part1.readOnce();
         byte[] buf = new byte[8192];

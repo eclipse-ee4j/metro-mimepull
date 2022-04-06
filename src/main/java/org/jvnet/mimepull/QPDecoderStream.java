@@ -177,7 +177,7 @@ final class QPDecoderStream extends FilterInputStream {
 	return in.available();
     }
 
-    /**** begin TEST program
+    /* ***begin TEST program
     public static void main(String argv[]) throws Exception {
         FileInputStream infile = new FileInputStream(argv[0]);
         QPDecoderStream decoder = new QPDecoderStream(infile);

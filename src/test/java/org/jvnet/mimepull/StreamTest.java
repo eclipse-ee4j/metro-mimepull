@@ -16,7 +16,6 @@ import org.junit.Test;
 
 import java.io.InputStream;
 import java.io.BufferedInputStream;
-import java.io.IOException;
 
 /**
  * @author Jitendra Kotamraju
@@ -249,7 +248,7 @@ public class StreamTest {
             int i, j;
 
             @Override
-            public int read() throws IOException {
+            public int read() {
                 if (i >= data.length) {
                     return -1;
                 } else if (data[i] == '1' || data[i] == '2' || data[i] == '3') {

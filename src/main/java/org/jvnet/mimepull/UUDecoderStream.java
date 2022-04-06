@@ -179,7 +179,7 @@ final class UUDecoderStream extends FilterInputStream {
 		} catch (NumberFormatException ex) {
 		    if (!ignoreErrors) {
                         throw new DecodingException(
-                                "UUDecoder: Error in mode: " + ex.toString());
+                                "UUDecoder: Error in mode: " + ex);
                     }
 		}
 		if (line.length() > 10) {
@@ -324,7 +324,7 @@ final class UUDecoderStream extends FilterInputStream {
 	return true;
     }
 
-    /*** begin TEST program *****
+    /* ** begin TEST program *****
     public static void main(String argv[]) throws Exception {
     	FileInputStream infile = new FileInputStream(argv[0]);
 	UUDecoderStream decoder = new UUDecoderStream(infile);
