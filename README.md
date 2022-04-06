@@ -1,4 +1,4 @@
-[//]: # " Copyright (c) 2018, 2021 Oracle and/or its affiliates. All rights reserved. "
+[//]: # " Copyright (c) 2018, 2022 Oracle and/or its affiliates. All rights reserved. "
 [//]: # "  "
 [//]: # " This program and the accompanying materials are made available under the "
 [//]: # " terms of the Eclipse Distribution License v. 1.0, which is available at "
@@ -6,7 +6,8 @@
 [//]: # "  "
 [//]: # " SPDX-License-Identifier: BSD-3-Clause "
 
-[![Build Status](https://travis-ci.com/eclipse-ee4j/metro-mimepull.svg?branch=master)](https://travis-ci.com/eclipse-ee4j/metro-mimepull)
+[![Build Status](https://github.com/eclipse-ee4j/metro-mimepull/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/eclipse-ee4j/metro-mimepull/actions/workflows/maven.yml?branch=master)
+[![Jakarta Staging (Snapshots)](https://img.shields.io/nexus/s/https/jakarta.oss.sonatype.org/org.jvnet.mimepull/mimepull.svg)](https://jakarta.oss.sonatype.org/content/repositories/staging/org/jvnet/mimepull/mimepull/)
 
 # Mimepull
 

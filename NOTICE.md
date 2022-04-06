@@ -1,4 +1,4 @@
-[//]: # " Copyright (c) 2018, 2021 Oracle and/or its affiliates. All rights reserved. "
+[//]: # " Copyright (c) 2018, 2022 Oracle and/or its affiliates. All rights reserved. "
 [//]: # "  "
 [//]: # " This program and the accompanying materials are made available under the "
 [//]: # " terms of the Eclipse Distribution License v. 1.0, which is available at "
@@ -25,8 +25,8 @@ source code repository logs.
 ## Declared Project Licenses
 
 This program and the accompanying materials are made available under the terms
-of the Eclipse Distribution License v. 1.0 which is available at
-http://www.eclipse.org/org/documents/edl-v10.php.
+of the Eclipse Distribution License v1.0 which is available at
+https://www.eclipse.org/org/documents/edl-v10.php.
 
 SPDX-License-Identifier: BSD-3-Clause
 
@@ -44,6 +44,7 @@ The project maintains the following source code repositories:
 * https://github.com/eclipse-ee4j/metro-saaj
 * https://github.com/eclipse-ee4j/metro-jwsdp-samples
 * https://github.com/eclipse-ee4j/jax-rpc-ri
+* https://github.com/eclipse-ee4j/jaxr-ri
 
 ## Third-party Content
 
