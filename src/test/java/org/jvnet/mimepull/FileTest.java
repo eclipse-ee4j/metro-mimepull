@@ -12,6 +12,7 @@ package org.jvnet.mimepull;
 
 import java.io.File;
 import java.io.InputStream;
+import java.nio.file.Files;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -35,7 +36,7 @@ public class FileTest {
             final MIMEPart part = message.getAttachments().get(0);
 
             // Temp file to move MIME temp file to.
-            final File tempFile = File.createTempFile("ship", "it");
+            final File tempFile = Files.createTempFile("ship", "it").toFile();
             tempFile.deleteOnExit();
 
             // Move the file.
