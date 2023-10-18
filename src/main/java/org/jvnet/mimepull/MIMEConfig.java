@@ -11,6 +11,7 @@
 package org.jvnet.mimepull;
 
 import java.io.File;
+import java.nio.file.Files;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -128,8 +129,8 @@ public class MIMEConfig {
         if (!isOnlyMemory()) {
             try {
                 File tempFile = (tempDir == null)
-                        ? File.createTempFile(prefix, suffix)
-                        : File.createTempFile(prefix, suffix, tempDir);
+                        ? Files.createTempFile(prefix, suffix).toFile()
+                        : Files.createTempFile(tempDir.toPath(), prefix, suffix).toFile();
                 boolean deleted = tempFile.delete();
                 if (!deleted) {
                     if (LOGGER.isLoggable(Level.INFO)) {
